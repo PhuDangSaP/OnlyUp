@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController characterController;
     private Animator animator;
+    private Transform mainCamera;
 
     private Vector3 moveDirection;
 
@@ -12,26 +13,37 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float sprintSpeed = 10f;
     [SerializeField] private float crouchSpeed = 3f;
 
+    public float turnSmoothTime = 0.1f;
+    private float turnSmoothVelocity;
+
     [SerializeField] private float jumpForce = 5f;
     private float ySpeed;
-    private float originalStepOffset;
+
     [SerializeField] private float jumpButtonGracePeriod = 0.2f;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
     private bool isJumping;
     //private bool isGrounded;
 
-    [SerializeField] private float crouchHeight = 0.5f;
-    [SerializeField] private float standHeight = 2f;   
+    private float crouchHeight = 1.3f;
+    private float standHeight = 1.5f;
+    private float crouchCenter = 0.6f;
+    private float standCenter = 0.81f;
     private bool isCrouching;
-   
+
     private bool isSprinting;
+
+    private readonly float DistanceCanClimbLedge = 0.2f;
+    [SerializeField] private LayerMask vaultLayer;
+    private bool canClimb;
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         speed = moveSpeed;
-        originalStepOffset = characterController.stepOffset;
+
     }
     void Update()
     {
@@ -40,6 +52,7 @@ public class PlayerController : MonoBehaviour
         Sprint();
         Jump();
         Crouch();
+        Climb();
     }
     void ApplyGravity()
     {
@@ -51,14 +64,17 @@ public class PlayerController : MonoBehaviour
 
         if (moveDirection != Vector3.zero)
         {
-            Quaternion toRotation = Quaternion.LookRotation(moveDirection, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 720 * Time.deltaTime);
+            moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
+            float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
         }
+
         moveDirection.y = ySpeed;
         moveDirection *= speed * Time.deltaTime;
         characterController.Move(moveDirection);
 
         moveDirection.y = 0f;
+
 
         float velocityZ = Vector3.Dot(moveDirection.normalized, transform.forward);
         float velocityX = Vector3.Dot(moveDirection.normalized, transform.right);
@@ -67,7 +83,7 @@ public class PlayerController : MonoBehaviour
     }
     void Sprint()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && !isCrouching && Input.GetAxis("Vertical") > 0)
         {
             speed = sprintSpeed;
             isSprinting = true;
@@ -94,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
         if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
         {
-            characterController.stepOffset = originalStepOffset;
+
             ySpeed = -0.5f;
             animator.SetBool("isGrounded", true);
             //isGrounded = true;
@@ -109,34 +125,67 @@ public class PlayerController : MonoBehaviour
                 isJumping = true;
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
+
             }
         }
         else
         {
-            characterController.stepOffset = 0f;
             animator.SetBool("isGrounded", false);
             //isGrounded = false;
 
-            if ((isJumping && ySpeed < 0)||ySpeed<-2)
+            if ((isJumping && ySpeed < 0) || ySpeed < -2)
             {
                 animator.SetBool("isFalling", true);
             }
         }
     }
+
+
     void Crouch()
     {
-        if(characterController.isGrounded)
+        if (characterController.isGrounded)
         {
-            if(Input.GetKeyDown(KeyCode.LeftControl))
-            { 
-                speed=crouchSpeed;
-                animator.SetBool("isCrouching", true);
-            }
-            if(Input.GetKeyUp(KeyCode.LeftControl))
+            if (Input.GetKeyDown(KeyCode.LeftControl))
             {
-                speed = moveSpeed;
-                animator.SetBool("isCrouching", false);
+                isCrouching = !isCrouching;
+                if (isCrouching)
+                {
+                    speed = crouchSpeed;
+                    characterController.height = crouchHeight;
+                    characterController.center = new Vector3(0, crouchCenter, 0);
+                }
+                else
+                {
+                    speed = moveSpeed;
+                    characterController.height = standHeight;
+                    characterController.center = new Vector3(0, standCenter, 0);
+                }
+                animator.SetBool("isCrouching", isCrouching);
+            }
+
+        }
+    }
+
+
+    void Climb()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if (Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var firstHit, 1f, vaultLayer))
+            {
+                if (!Physics.Raycast(transform.position+Vector3.up*2f,transform.forward,out var check,1f,vaultLayer))
+                {
+                    if (Physics.Raycast(firstHit.point + transform.forward * 0.15f + Vector3.up * 2, Vector3.down, out var secondHit))
+                    {
+                        print(secondHit.point);
+                        GameObject.Find("Sphere").gameObject.transform.position = secondHit.point;
+                        //characterController.Move(secondHit.point);
+                    }
+                }
+
             }
         }
     }
+
+
 }
