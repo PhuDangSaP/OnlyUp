@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -32,10 +33,10 @@ public class PlayerController : MonoBehaviour
     private bool isCrouching;
 
     private bool isSprinting;
+    private bool isClimbing;
 
     private readonly float DistanceCanClimbLedge = 0.2f;
     [SerializeField] private LayerMask vaultLayer;
-    private bool canClimb;
 
     private void Awake()
     {
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour
         Jump();
         Crouch();
         Climb();
+        SlowMotion();
     }
     void ApplyGravity()
     {
@@ -105,12 +107,22 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            jumpButtonPressedTime = Time.time;
+            if (Physics.Raycast(transform.position + Vector3.up * 1.3f, transform.forward, out var firstHit, 1f, vaultLayer))
+            {
+                if (Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var check, 1f, vaultLayer))
+                {
+                    jumpButtonPressedTime = Time.time;
+                }
+            }
+            else
+            {
+                jumpButtonPressedTime = Time.time;
+            }
+           
         }
 
         if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
         {
-
             ySpeed = -0.5f;
             animator.SetBool("isGrounded", true);
             //isGrounded = true;
@@ -119,9 +131,9 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFalling", false);
 
             if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
-            {
-                ySpeed = jumpForce;
+            {           
                 animator.SetBool("isJumping", true);
+                ySpeed = jumpForce;
                 isJumping = true;
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
@@ -139,6 +151,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    
 
 
     void Crouch()
@@ -169,23 +182,35 @@ public class PlayerController : MonoBehaviour
 
     void Climb()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if ((Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded) || animator.GetBool("isFalling"))
         {
-            if (Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var firstHit, 1f, vaultLayer))
+            if (Physics.Raycast(transform.position + Vector3.up * 1.3f, transform.forward, out var firstHit, 1f, vaultLayer))
             {
-                if (!Physics.Raycast(transform.position+Vector3.up*2f,transform.forward,out var check,1f,vaultLayer))
+                if (!Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var check, 1f, vaultLayer))
                 {
-                    if (Physics.Raycast(firstHit.point + transform.forward * 0.15f + Vector3.up * 2, Vector3.down, out var secondHit))
+                    if (Physics.Raycast(firstHit.point + transform.forward * 0.2f + Vector3.up * 2, Vector3.down, out var secondHit))
                     {
-                        print(secondHit.point);
                         GameObject.Find("Sphere").gameObject.transform.position = secondHit.point;
-                        //characterController.Move(secondHit.point);
+                        StartCoroutine(ClimbAnimation(secondHit.point+transform.forward*0.7f));
                     }
                 }
-
             }
         }
-    }
 
+    }
+    IEnumerator ClimbAnimation(Vector3 targetPos)
+    {
+        animator.SetTrigger("Climb");
+        yield return new WaitForSeconds(1.5f);
+        characterController.Move(targetPos - transform.position);
+    }
+    void SlowMotion()
+    {
+        if (Input.GetMouseButton(1))
+        {
+            Time.timeScale = 0.3f;
+        }
+        else Time.timeScale = 1;
+    }
 
 }
