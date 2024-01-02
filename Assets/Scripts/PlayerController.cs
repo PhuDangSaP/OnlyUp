@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -35,9 +36,13 @@ public class PlayerController : MonoBehaviour
     private bool isSprinting;
     private bool isClimbing;
 
-    private readonly float DistanceCanClimbLedge = 0.2f;
-    [SerializeField] private LayerMask vaultLayer;
+    [SerializeField] private LayerMask obstacleLayer;
+    private bool playerInAction;
 
+    private bool playerControl = true;
+
+    [Header("ActionArea")]
+    public List<PlayerAction> PlayerActions;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -48,13 +53,18 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        ApplyGravity();
         MoveThePlayer();
+        if (!playerControl)
+            return;
+        ApplyGravity();
         Sprint();
-        Jump();
         Crouch();
-        Climb();
+        Jump();
+        Action();
+        //Climb();
+        CheckJumpIfBed();
         SlowMotion();
+
     }
     void ApplyGravity()
     {
@@ -62,6 +72,7 @@ public class PlayerController : MonoBehaviour
     }
     void MoveThePlayer()
     {
+
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
         if (moveDirection != Vector3.zero)
@@ -69,6 +80,24 @@ public class PlayerController : MonoBehaviour
             moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
             float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
+
+            if (characterController.isGrounded)
+            {
+                if (isCrouching)
+                {
+                    SoundManager.PlaySound(SoundManager.Sound.PlayerCrouch, 0.1f);
+                }
+                else if (isSprinting)
+                {
+                    SoundManager.PlaySound(SoundManager.Sound.PlayerSprint, 1f);
+                }
+                else
+                {
+                    SoundManager.PlaySound(SoundManager.Sound.PlayerWalk, Random.Range(0.2f, 0.6f));
+
+                }
+
+            }
         }
 
         moveDirection.y = ySpeed;
@@ -89,6 +118,7 @@ public class PlayerController : MonoBehaviour
         {
             speed = sprintSpeed;
             isSprinting = true;
+
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
@@ -98,62 +128,6 @@ public class PlayerController : MonoBehaviour
         }
         animator.SetBool("isSprinting", isSprinting);
     }
-    void Jump()
-    {
-        if (characterController.isGrounded)
-        {
-            lastGroundedTime = Time.time;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (Physics.Raycast(transform.position + Vector3.up * 1.3f, transform.forward, out var firstHit, 1f, vaultLayer))
-            {
-                if (Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var check, 1f, vaultLayer))
-                {
-                    jumpButtonPressedTime = Time.time;
-                }
-            }
-            else
-            {
-                jumpButtonPressedTime = Time.time;
-            }
-           
-        }
-
-        if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
-        {
-            ySpeed = -0.5f;
-            animator.SetBool("isGrounded", true);
-            //isGrounded = true;
-            animator.SetBool("isJumping", false);
-            isJumping = false;
-            animator.SetBool("isFalling", false);
-
-            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
-            {           
-                animator.SetBool("isJumping", true);
-                ySpeed = jumpForce;
-                isJumping = true;
-                jumpButtonPressedTime = null;
-                lastGroundedTime = null;
-
-            }
-        }
-        else
-        {
-            animator.SetBool("isGrounded", false);
-            //isGrounded = false;
-
-            if ((isJumping && ySpeed < 0) || ySpeed < -2)
-            {
-                animator.SetBool("isFalling", true);
-            }
-        }
-    }
-    
-
-
     void Crouch()
     {
         if (characterController.isGrounded)
@@ -178,31 +152,145 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+    void Jump()
+    {
+        if (characterController.isGrounded)
+        {
+            lastGroundedTime = Time.time;
+        }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ObstacleChecker.ObstacleInfo hit1 = ObstacleChecker.CheckObstacle(transform.position, transform, 0.9f, obstacleLayer);
+            ObstacleChecker.ObstacleInfo hit2 = ObstacleChecker.CheckClimb(transform.position, transform, 0.9f, obstacleLayer);
+            if (!hit1.hitFound&&!hit2.hitFound)
+            {
+                jumpButtonPressedTime = Time.time;
+            }
 
-    void Climb()
+        }
+
+        if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
+        {
+            ySpeed = -0.5f;
+            animator.SetBool("isGrounded", true);
+            //isGrounded = true;
+            animator.SetBool("isJumping", false);
+            isJumping = false;
+            animator.SetBool("isFalling", false);
+
+            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
+            {
+                animator.SetBool("isJumping", true);
+                ySpeed = jumpForce;
+                isJumping = true;
+                jumpButtonPressedTime = null;
+                lastGroundedTime = null;
+
+            }
+        }
+        else
+        {
+            animator.SetBool("isGrounded", false);
+            //isGrounded = false;
+
+            if ((isJumping && ySpeed < 0) || ySpeed < -2)
+            {
+                animator.SetBool("isFalling", true);
+            }
+        }
+    }
+    void Action()
     {
         if ((Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded) || animator.GetBool("isFalling"))
         {
-            if (Physics.Raycast(transform.position + Vector3.up * 1.3f, transform.forward, out var firstHit, 1f, vaultLayer))
+            ObstacleChecker.ObstacleInfo hitdata = ObstacleChecker.CheckClimb(transform.position, transform, 0.5f, obstacleLayer);
+            if (hitdata.hitFound)
             {
-                if (!Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var check, 1f, vaultLayer))
+                foreach (var action in PlayerActions)
                 {
-                    if (Physics.Raycast(firstHit.point + transform.forward * 0.2f + Vector3.up * 2, Vector3.down, out var secondHit))
+                    if (action.name == "Climb")
                     {
-                        GameObject.Find("Sphere").gameObject.transform.position = secondHit.point;
-                        StartCoroutine(ClimbAnimation(secondHit.point+transform.forward*0.7f));
+                        if (action.CheckIfAvailable(hitdata, transform))
+                        {
+                            if (animator.GetBool("isFalling"))
+                                animator.SetBool("isFalling", false);
+                            StartCoroutine(PerformAction(action));
+                            return;
+                        }
                     }
                 }
             }
         }
-
+        if ((Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded) && !playerInAction)
+        {
+            ObstacleChecker.ObstacleInfo hitdata = ObstacleChecker.CheckObstacle(transform.position, transform, 0.9f, obstacleLayer);
+            if (hitdata.hitFound)
+            {
+                foreach (var action in PlayerActions)
+                {
+                    if (action.CheckIfAvailable(hitdata, transform))
+                    {
+                        StartCoroutine(PerformAction(action));
+                        break;
+                    }
+                }
+            }
+        }
     }
-    IEnumerator ClimbAnimation(Vector3 targetPos)
+    IEnumerator PerformAction(PlayerAction action)
     {
-        animator.SetTrigger("Climb");
-        yield return new WaitForSeconds(1.5f);
-        characterController.Move(targetPos - transform.position);
+        playerInAction = true;
+        SetControl(false);
+
+        animator.CrossFade(action.AnimationName, 0.2f);
+        yield return null;
+        yield return new WaitForSeconds(animator.GetNextAnimatorStateInfo(0).length);
+        SetControl(true);
+        playerInAction = false;
+    }
+
+    //void Climb()
+    //{
+    //    if ((Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded) || animator.GetBool("isFalling"))
+    //    {
+    //        if (Physics.Raycast(transform.position + Vector3.up * 1.3f, transform.forward, out var firstHit, 1f, obstacleLayer))
+    //        {
+    //            if (!Physics.Raycast(transform.position + Vector3.up * 1.7f, transform.forward, out var check, 1f, obstacleLayer))
+    //            {
+    //                if (Physics.Raycast(firstHit.point + transform.forward * 0.2f + Vector3.up * 2, Vector3.down, out var secondHit))
+    //                {
+    //                    GameObject.Find("Sphere").gameObject.transform.position = secondHit.point;
+    //                    StartCoroutine(ClimbAnimation(secondHit.point + transform.forward * 0.7f));
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
+    //IEnumerator ClimbAnimation(Vector3 targetPos)
+    //{
+    //    isClimbing = true;
+    //    animator.SetTrigger("Climb");
+    //    yield return new WaitForSeconds(1.5f);
+    //    isClimbing = false;
+    //}
+    void PlayLandingSound()
+    {
+        SoundManager.PlaySound(SoundManager.Sound.Landing);
+    }
+
+    void CheckJumpIfBed()
+    {
+        if (Physics.Raycast(transform.position, Vector3.down, out var hit, 1))
+        {
+            if (hit.collider.gameObject.tag == "Bed")
+            {
+                ySpeed = 10;
+                isJumping = true;
+                SoundManager.PlaySound(SoundManager.Sound.BedBounce, 0.8f);
+            }
+
+        }
     }
     void SlowMotion()
     {
@@ -211,6 +299,16 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = 0.3f;
         }
         else Time.timeScale = 1;
+    }
+    void SetControl(bool hasControl)
+    {
+        this.playerControl = hasControl;
+        characterController.enabled = hasControl;
+        if (!hasControl)
+        {
+            animator.SetFloat("VelocityX", 0);
+            animator.SetFloat("VelocityZ", 0);
+        }
     }
 
 }
