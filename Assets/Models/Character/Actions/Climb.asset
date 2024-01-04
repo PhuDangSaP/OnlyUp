@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationName: Climb
   minimumHeight: 1
-  maximumHeight: 2.5
+  maximumHeight: 1.8
+  offSet: {x: 0, y: 1.3, z: 0}
+  canInAir: 0
+  allowTargetMatching: 1
+  compareBodyPart: 5
+  compareStartTime: 0
+  compareEndTime: 0.79

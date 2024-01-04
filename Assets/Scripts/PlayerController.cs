@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        CompareTarget();
         MoveThePlayer();
         if (!playerControl)
             return;
@@ -61,7 +62,6 @@ public class PlayerController : MonoBehaviour
         Crouch();
         Jump();
         Action();
-        //Climb();
         CheckJumpIfBed();
         SlowMotion();
 
@@ -72,14 +72,16 @@ public class PlayerController : MonoBehaviour
     }
     void MoveThePlayer()
     {
-
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
         if (moveDirection != Vector3.zero)
         {
-            moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
-            float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
+            
+                moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
+                float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
+            
+
 
             if (characterController.isGrounded)
             {
@@ -103,8 +105,9 @@ public class PlayerController : MonoBehaviour
         moveDirection.y = ySpeed;
         moveDirection *= speed * Time.deltaTime;
         characterController.Move(moveDirection);
-
         moveDirection.y = 0f;
+
+
 
 
         float velocityZ = Vector3.Dot(moveDirection.normalized, transform.forward);
@@ -161,12 +164,15 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            ObstacleChecker.ObstacleInfo hit1 = ObstacleChecker.CheckObstacle(transform.position, transform, 0.9f, obstacleLayer);
-            ObstacleChecker.ObstacleInfo hit2 = ObstacleChecker.CheckClimb(transform.position, transform, 0.9f, obstacleLayer);
-            if (!hit1.hitFound&&!hit2.hitFound)
+            foreach (var action in PlayerActions)
             {
-                jumpButtonPressedTime = Time.time;
+                if (action.CheckIfAvailable(transform.position, transform, 0.5f, obstacleLayer))
+                {
+                    return;
+                }
             }
+            jumpButtonPressedTime = Time.time;
+
 
         }
 
@@ -202,41 +208,27 @@ public class PlayerController : MonoBehaviour
     }
     void Action()
     {
-        if ((Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded) || animator.GetBool("isFalling"))
+        bool inAir = animator.GetBool("isFalling");
+        if ((Input.GetKeyDown(KeyCode.Space) || inAir) && !playerInAction)
         {
-            ObstacleChecker.ObstacleInfo hitdata = ObstacleChecker.CheckClimb(transform.position, transform, 0.5f, obstacleLayer);
-            if (hitdata.hitFound)
+            foreach (var action in PlayerActions)
             {
-                foreach (var action in PlayerActions)
+                if (action.CheckIfAvailable(transform.position, transform, 0.5f, obstacleLayer, inAir))
                 {
-                    if (action.name == "Climb")
+                    if (inAir)
                     {
-                        if (action.CheckIfAvailable(hitdata, transform))
-                        {
-                            if (animator.GetBool("isFalling"))
-                                animator.SetBool("isFalling", false);
-                            StartCoroutine(PerformAction(action));
-                            return;
-                        }
+                        animator.SetBool("isJumping", false);
+                        animator.SetBool("isFalling", false);
                     }
+
+                    StartCoroutine(PerformAction(action));
+                    break;
                 }
             }
+
         }
-        if ((Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded) && !playerInAction)
-        {
-            ObstacleChecker.ObstacleInfo hitdata = ObstacleChecker.CheckObstacle(transform.position, transform, 0.9f, obstacleLayer);
-            if (hitdata.hitFound)
-            {
-                foreach (var action in PlayerActions)
-                {
-                    if (action.CheckIfAvailable(hitdata, transform))
-                    {
-                        StartCoroutine(PerformAction(action));
-                        break;
-                    }
-                }
-            }
-        }
+
+
     }
     IEnumerator PerformAction(PlayerAction action)
     {
@@ -245,9 +237,32 @@ public class PlayerController : MonoBehaviour
 
         animator.CrossFade(action.AnimationName, 0.2f);
         yield return null;
+
         yield return new WaitForSeconds(animator.GetNextAnimatorStateInfo(0).length);
+
+        if ((action.ComparePosition - transform.position).sqrMagnitude > 0.2f)
+        {
+            transform.position = action.ComparePosition + transform.forward * 0.1f;
+        }
+
         SetControl(true);
         playerInAction = false;
+    }
+    void CompareTarget()
+    {
+        foreach (var action in PlayerActions)
+        {
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName(action.AnimationName))
+            {
+                if (action.AllowTargetMatching)
+                {
+                    Debug.Log(action.ComparePosition);
+                    animator.MatchTarget(action.ComparePosition + transform.forward*0.3f+Vector3.up*0.5f, transform.rotation, action.CompareBodyPart, new MatchTargetWeightMask(new Vector3(0, 1,0), 0), action.CompareStartTime, action.CompareEndTime);
+                    break;
+                }
+
+            }
+        }
     }
 
     //void Climb()

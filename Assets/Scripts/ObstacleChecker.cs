@@ -15,18 +15,7 @@ public static class ObstacleChecker
         }
         return hitdata;
     }
-    public static ObstacleInfo CheckClimb(Vector3 rayStart, Transform playerTransform, float rayLength, LayerMask obstacleLayer)
-    {
-        rayStart += new Vector3(0, 1.3f, 0);
-        ObstacleInfo hitdata = new ObstacleInfo();
-        hitdata.hitFound = Physics.Raycast(rayStart, playerTransform.forward * rayLength, out hitdata.hitInfo, rayLength, obstacleLayer);
-
-        if (hitdata.hitFound)
-        {
-            hitdata.heightHitFound = Physics.Raycast(hitdata.hitInfo.point + Vector3.up * heightRayLength, Vector3.down, out hitdata.heightInfo, heightRayLength, obstacleLayer);
-        }
-        return hitdata;
-    }
+   
 
     public struct ObstacleInfo
     {
