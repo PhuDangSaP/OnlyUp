@@ -25,7 +25,7 @@ public class PlayerAction : ScriptableObject
 
         if (!hitData.hitFound)        
             return false;
-       
+
         hitData.heightHitFound = Physics.Raycast(hitData.hitInfo.point + Vector3.up * heightRayLength, Vector3.down, out hitData.heightInfo, heightRayLength, obstacleLayer);
         float checkHeight = hitData.heightInfo.point.y - playerTransform.position.y;
        

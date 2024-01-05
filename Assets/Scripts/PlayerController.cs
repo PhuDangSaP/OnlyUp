@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private bool isCrouching;
 
     private bool isSprinting;
-    private bool isClimbing;
+    //private bool isClimbing;
 
     [SerializeField] private LayerMask obstacleLayer;
     private bool playerInAction;
@@ -75,8 +75,7 @@ public class PlayerController : MonoBehaviour
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
         if (moveDirection != Vector3.zero)
-        {
-            
+        {            
                 moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
                 float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
@@ -168,6 +167,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (action.CheckIfAvailable(transform.position, transform, 0.5f, obstacleLayer))
                 {
+                    
                     return;
                 }
             }
@@ -240,7 +240,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(animator.GetNextAnimatorStateInfo(0).length);
 
-        if ((action.ComparePosition - transform.position).sqrMagnitude > 0.2f)
+        if ((action.ComparePosition - transform.position).sqrMagnitude > 0.2f&&action.AllowTargetMatching)
         {
             transform.position = action.ComparePosition + transform.forward * 0.1f;
         }
