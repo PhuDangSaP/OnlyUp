@@ -69,6 +69,7 @@
     <Compile Include="Assets\ZRNAssets\PQAssets\Query-Chan\Scripts\QueryAnimationController.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\MeshProcessing\MeshVertex.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\Bezier\SplineNode.cs" />
+    <Compile Include="Assets\Container_ship\Scripts\FreeflightCamera.cs" />
     <Compile Include="Assets\SplineMesh\Scripts\Example\ExampleContortAlong.cs" />
     <Compile Include="Assets\ZRNAssets\005339_08932_25_14\Scripts\MoveCamera.cs" />
     <Compile Include="Assets\ZRNAssets\PQAssets\Query-Chan\Scripts\GUIController.cs" />
@@ -105,7 +106,9 @@
     <None Include="Assets\ZRNAssets\005339_08932_25_14\Shaders\StandardDoubleClip.shader" />
     <None Include="Assets\ZRNAssets\PQAssets\Query-Chan\Documents\ReadMe.txt" />
     <None Include="Assets\ZRNAssets\005339_08932_25_14\Documents\ReadMe.txt" />
+    <None Include="Assets\Container_ship\readme.txt" />
     <None Include="Assets\ZRNAssets\PQAssets\Query-Chan\Shaders\PQ_TransBlue.shader" />
+    <None Include="Assets\LowPolyFantasyClouds\Shaders\CloudsShader.shader" />
     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
     <None Include="Assets\ZRNAssets\PQAssets\Query-Chan\Shaders\PQ_Skin.shader" />
     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
