@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: 2cdd9b8cfe90c36419bcdf574603b5e6
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Apollo_HighTower_SLC_POIsign.mat
+    second: {fileID: 2100000, guid: f6b7fd91419dcf84393a0eb4ee55583d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Agency_ReceptionDesk_01.mat_7d92efde
+    second: {fileID: 2100000, guid: a46b22f2bb849e946a557805cc85896d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Constr_Lifts.mat_3307f382
+    second: {fileID: 2100000, guid: 3bf0d50bbb092d64ba138ef09fe90af3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_3dPrinter_01.mat
+    second: {fileID: 2100000, guid: fc76b93956313e14bb632d85803df556, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_3dPrinter_02.mat
+    second: {fileID: 2100000, guid: 5243364628dcf8e4ea0d01ac915c1296, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_3dPrinter_03.mat
+    second: {fileID: 2100000, guid: 0c159c6db1d40124cba9f578f6dce986, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_3dPrinter_04.mat
+    second: {fileID: 2100000, guid: 259a44779ad2e4f42a35adcbb65f3e33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Arm_02.mat
+    second: {fileID: 2100000, guid: 348807fc7cc11c847a8cfb241e6d45c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_ArmorCase_01.mat
+    second: {fileID: 2100000, guid: 2971ef2eec9c44d449acb020de02f64e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Cabinet_01.mat
+    second: {fileID: 2100000, guid: 2dbdb4110551d874d95b70f941e1d320, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Console_01.mat
+    second: {fileID: 2100000, guid: 09a62bae846054448b44639382279f5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Crate_01.mat.001
+    second: {fileID: 2100000, guid: 0dac2fd002c26ce438be02546308865b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Desk_03.mat
+    second: {fileID: 2100000, guid: e200ef2b41bae0840a12600c7e85c6f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Gantry_01.mat
+    second: {fileID: 2100000, guid: 6d1f81f3726c67a40b1a7e60453746be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Monitor_AnimatedScreen_01
+    second: {fileID: 2100000, guid: f75b9fd9ab3ae4b4a8030010750c6152, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Monitor_AnimatedScreen_01.mat
+    second: {fileID: 2100000, guid: 58678484416a37e4d8cb19ecf2d05d08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Monitor_AnimatedScreen_02
+    second: {fileID: 2100000, guid: 4e51229fe2e855f44a3627e050f23700, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Monitor_StaticScreen_05.mat_20bef0ce
+    second: {fileID: 2100000, guid: b9824fe3259cb524883fd2f5e757f87a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Platform.mat
+    second: {fileID: 2100000, guid: 2695f2375a32f414981227b68e1e5557, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_Sign_01.mat
+    second: {fileID: 2100000, guid: 3eaf6f50105ab5e4287fd2200e2669e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_ToolChest_01.mat
+    second: {fileID: 2100000, guid: ec6fa0572efc3de4a94e8394aeefa967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_WorkBench_01.mat
+    second: {fileID: 2100000, guid: 8a44862c06c2494418cd584e5df44e2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_WorkBench_01.mat.001
+    second: {fileID: 2100000, guid: 0fa5efb892048514e94a3f4d157a1c57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HighTower_SLC_WorkBench_01.mat.002
+    second: {fileID: 2100000, guid: a8018fb2fe8f4494a9b5cdbb9e0219bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Hightower_SLC_Lift_01.mat
+    second: {fileID: 2100000, guid: 2b529889aefe2fc4d9ad2ec784a300df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Hightower_SLC_Planter.mat_62e60c13
+    second: {fileID: 2100000, guid: a02a52b2f1e476f479096e975a483179, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Hightower_SLC_ReceptionDeck_Sign.mat_7d92efde
+    second: {fileID: 2100000, guid: 95f629b911d4e4c40a74f3138ac6642c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_IND_Lathe_01.mat
+    second: {fileID: 2100000, guid: 08daa8fe976932f4abfdb4910add2849, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Military_Satellite_DIsh.mat
+    second: {fileID: 2100000, guid: d9092e9e3e225534a9b4db56cdcd8185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_MountainBase_HoloLight_01_Hanging.mat
+    second: {fileID: 2100000, guid: 2d7dfe04dc7cfad4483d6b2cb33dcc03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_NeoTilted_Bench.mat_0f9ecee7
+    second: {fileID: 2100000, guid: 01d9d9889348e9949bf218299738215c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_NeoTilted_CoffeeSink.mat
+    second: {fileID: 2100000, guid: 4c194fe85c21b524bba032a8877dd5e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_NeoTilted_RollingChair.mat
+    second: {fileID: 2100000, guid: e00817206caee664c9170d22bd3ad375, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_NeoTilted_StreetLight.mat
+    second: {fileID: 2100000, guid: cf97757abeacb4946a3ccebc85987965, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Neo_T_Antenna_0.mat
+    second: {fileID: 2100000, guid: e2899ec4a3e6d8a42ac933d3e7187d9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Neo_T_Antenna_0.mat.001
+    second: {fileID: 2100000, guid: b6eb544fa95aa1446872f3fe97649139, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Neo_T_Antenna_0.mat.002
+    second: {fileID: 2100000, guid: eef0a5e8608b20e41a61ad3bebb840c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Yacht_Coffee_Table_01.mat_6faf018e
+    second: {fileID: 2100000, guid: 0cabc5daa7c19e34a8bc75ecdc38c363, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

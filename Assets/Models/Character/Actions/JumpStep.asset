@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationName: JumpStep
   minimumHeight: 0.2
-  maximumHeight: 0.9
+  maximumHeight: 0.6
   offSet: {x: 0, y: 0.1, z: 0}
   canInAir: 0
   allowTargetMatching: 0
