@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     private bool playerInAction;
 
     private bool playerControl = true;
+    private float fallHeight;
 
     [Header("ActionArea")]
     public List<PlayerAction> PlayerActions;
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         speed = moveSpeed;
-
+        Cursor.lockState = CursorLockMode.Locked;
     }
     void Update()
     {
@@ -68,19 +69,18 @@ public class PlayerController : MonoBehaviour
     }
     void ApplyGravity()
     {
-        ySpeed += Physics.gravity.y * Time.deltaTime;
+        ySpeed += -5 * Time.deltaTime;
+
     }
     void MoveThePlayer()
     {
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
-        if (moveDirection != Vector3.zero)
-        {            
-                moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
-                float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
-                transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
-            
-
+        if (moveDirection != Vector3.zero && !playerInAction)
+        {
+            moveDirection = Quaternion.Euler(0f, mainCamera.rotation.eulerAngles.y, 0f) * moveDirection;
+            float characterRotationAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, mainCamera.rotation.eulerAngles.y, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, characterRotationAngle, 0f);
 
             if (characterController.isGrounded)
             {
@@ -106,9 +106,6 @@ public class PlayerController : MonoBehaviour
         characterController.Move(moveDirection);
         moveDirection.y = 0f;
 
-
-
-
         float velocityZ = Vector3.Dot(moveDirection.normalized, transform.forward);
         float velocityX = Vector3.Dot(moveDirection.normalized, transform.right);
         animator.SetFloat("VelocityZ", velocityZ, 0.1f, Time.deltaTime);
@@ -116,11 +113,14 @@ public class PlayerController : MonoBehaviour
     }
     void Sprint()
     {
+        if (playerInAction)
+        {
+            isSprinting = false;
+        }
         if (Input.GetKey(KeyCode.LeftShift) && !isCrouching && Input.GetAxis("Vertical") > 0)
         {
             speed = sprintSpeed;
             isSprinting = true;
-
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
@@ -154,6 +154,7 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
     void Jump()
     {
         if (characterController.isGrounded)
@@ -167,7 +168,6 @@ public class PlayerController : MonoBehaviour
             {
                 if (action.CheckIfAvailable(transform.position, transform, 0.5f, obstacleLayer))
                 {
-                    
                     return;
                 }
             }
@@ -240,7 +240,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(animator.GetNextAnimatorStateInfo(0).length);
 
-        if ((action.ComparePosition - transform.position).sqrMagnitude > 0.2f&&action.AllowTargetMatching)
+        if ((action.ComparePosition - transform.position).sqrMagnitude > 0.2f && action.AllowTargetMatching)
         {
             transform.position = action.ComparePosition + transform.forward * 0.1f;
         }
@@ -256,8 +256,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (action.AllowTargetMatching)
                 {
-                    Debug.Log(action.ComparePosition);
-                    animator.MatchTarget(action.ComparePosition + transform.forward*0.3f+Vector3.up*0.5f, transform.rotation, action.CompareBodyPart, new MatchTargetWeightMask(new Vector3(0, 1,0), 0), action.CompareStartTime, action.CompareEndTime);
+                    animator.MatchTarget(action.ComparePosition + transform.forward * 0.5f + Vector3.up * 0.3f, transform.rotation, action.CompareBodyPart, new MatchTargetWeightMask(new Vector3(0, 1, 0), 0), action.CompareStartTime, action.CompareEndTime);
                     break;
                 }
 
@@ -289,10 +288,22 @@ public class PlayerController : MonoBehaviour
     //    yield return new WaitForSeconds(1.5f);
     //    isClimbing = false;
     //}
+    void CountFallHeight()
+    {
+        if (ySpeed > -2)
+            fallHeight = transform.position.y;
+    }
     void PlayLandingSound()
     {
         SoundManager.PlaySound(SoundManager.Sound.Landing);
+        // Check play theme
+        if (fallHeight - transform.position.y > 60)
+        {
+            SoundManager.StopSound();
+            SoundManager.PlaySound(SoundManager.Sound.Theme);
+        }
     }
+
 
     void CheckJumpIfBed()
     {
@@ -309,11 +320,20 @@ public class PlayerController : MonoBehaviour
     }
     void SlowMotion()
     {
+        if (Input.GetMouseButtonDown(1))
+        {
+            SoundManager.StopSound();
+            SoundManager.PlaySound(SoundManager.Sound.SlowMotion);
+        }
         if (Input.GetMouseButton(1))
         {
             Time.timeScale = 0.3f;
         }
-        else Time.timeScale = 1;
+        if (Input.GetMouseButtonUp(1))
+        {
+            Time.timeScale = 1;
+        }
+
     }
     void SetControl(bool hasControl)
     {
@@ -325,5 +345,6 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("VelocityZ", 0);
         }
     }
+    
 
 }

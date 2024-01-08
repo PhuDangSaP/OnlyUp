@@ -11,7 +11,10 @@ public static class SoundManager
         PlayerJump,
         Landing,
         BedBounce,
-        Music
+        SlowMotion,
+        Congratulation,
+        SadMusic,
+        Theme
     }
     private static Dictionary<Sound, float> soundTimerDictionary;
 
@@ -25,7 +28,7 @@ public static class SoundManager
         soundTimerDictionary[Sound.PlayerSprint] = 0;
         soundTimerDictionary[Sound.PlayerCrouch] = 0;
     }
-    public static void PlaySound(Sound sound,float volumn=1)
+    public static void PlaySound(Sound sound, float volumn = 1)
     {
         if (CanPlaySound(sound))
         {
@@ -35,7 +38,7 @@ public static class SoundManager
                 audioSource = soundGameObject.AddComponent<AudioSource>();
             }
             audioSource.volume = volumn;
-            audioSource.PlayOneShot(GetAudioClip(sound));           
+            audioSource.PlayOneShot(GetAudioClip(sound));
         }
     }
     private static bool CanPlaySound(Sound sound)
@@ -116,4 +119,14 @@ public static class SoundManager
         }
         return null;
     }
+    public static float GetSoundLength(Sound sound)
+    {
+        AudioClip audioClip = GetAudioClip(sound);
+        return (audioClip != null) ? audioClip.length : 0;
+    }
+    public static void StopSound()
+    {
+        audioSource.Stop();
+    }
+
 }

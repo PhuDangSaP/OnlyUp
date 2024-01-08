@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerAction : ScriptableObject
 {
     private float heightRayLength = 10f;
-    [Header("Obstacle ")]
+    [Header("Obstacle")]
     [SerializeField] string animationName;
     [SerializeField] float minimumHeight;
     [SerializeField] float maximumHeight;
