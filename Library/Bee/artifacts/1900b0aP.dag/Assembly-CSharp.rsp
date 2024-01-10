@@ -307,6 +307,7 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.TerrainTools.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.ref.dll"

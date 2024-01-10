@@ -11,6 +11,7 @@ public class PauseManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            SoundManager.StopSound();
             Pause();
         }
     }

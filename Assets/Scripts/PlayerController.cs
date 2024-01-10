@@ -52,6 +52,10 @@ public class PlayerController : MonoBehaviour
         speed = moveSpeed;
         Cursor.lockState = CursorLockMode.Locked;
     }
+    private void Start()
+    {
+        InvokeRepeating("CheckPlayMelody", 300f, 450f);
+    }
     void Update()
     {
         CompareTarget();
@@ -86,15 +90,15 @@ public class PlayerController : MonoBehaviour
             {
                 if (isCrouching)
                 {
-                    SoundManager.PlaySound(SoundManager.Sound.PlayerCrouch, 0.1f);
+                    SoundManager.PlaySound(SoundManager.Sound.PlayerCrouch);
                 }
                 else if (isSprinting)
                 {
-                    SoundManager.PlaySound(SoundManager.Sound.PlayerSprint, 1f);
+                    SoundManager.PlaySound(SoundManager.Sound.PlayerSprint);
                 }
                 else
                 {
-                    SoundManager.PlaySound(SoundManager.Sound.PlayerWalk, Random.Range(0.2f, 0.6f));
+                    SoundManager.PlaySound(SoundManager.Sound.PlayerWalk);
 
                 }
 
@@ -288,20 +292,20 @@ public class PlayerController : MonoBehaviour
     //    yield return new WaitForSeconds(1.5f);
     //    isClimbing = false;
     //}
-    void CountFallHeight()
-    {
-        if (ySpeed > -2)
-            fallHeight = transform.position.y;
-    }
+    //void CountFallHeight()
+    //{
+    //    if (ySpeed > -2)
+    //        fallHeight = transform.position.y;
+    //}
     void PlayLandingSound()
     {
         SoundManager.PlaySound(SoundManager.Sound.Landing);
         // Check play theme
-        if (fallHeight - transform.position.y > 60)
-        {
-            SoundManager.StopSound();
-            SoundManager.PlaySound(SoundManager.Sound.Theme);
-        }
+        //if (fallHeight - transform.position.y > 60)
+        //{
+        //    SoundManager.StopSound();
+        //    SoundManager.PlaySound(SoundManager.Sound.Theme);
+        //}
     }
 
 
@@ -313,7 +317,7 @@ public class PlayerController : MonoBehaviour
             {
                 ySpeed = 10;
                 isJumping = true;
-                SoundManager.PlaySound(SoundManager.Sound.BedBounce, 0.8f);
+                SoundManager.PlaySound(SoundManager.Sound.BedBounce);
             }
 
         }
@@ -344,6 +348,11 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("VelocityX", 0);
             animator.SetFloat("VelocityZ", 0);
         }
+    }
+    void CheckPlayMelody()
+    {
+        SoundManager.StopSound();
+        SoundManager.PlaySound(SoundManager.Sound.SadMusic);
     }
     
 

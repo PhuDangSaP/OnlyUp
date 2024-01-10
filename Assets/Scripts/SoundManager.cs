@@ -3,6 +3,7 @@ using UnityEngine;
 
 public static class SoundManager
 {
+    public static float volumn = 1f;
     public enum Sound
     {
         PlayerWalk,
@@ -28,8 +29,8 @@ public static class SoundManager
         soundTimerDictionary[Sound.PlayerSprint] = 0;
         soundTimerDictionary[Sound.PlayerCrouch] = 0;
     }
-    public static void PlaySound(Sound sound, float volumn = 1)
-    {
+    public static void PlaySound(Sound sound)
+    {      
         if (CanPlaySound(sound))
         {
             if (soundGameObject == null)

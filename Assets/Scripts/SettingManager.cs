@@ -8,4 +8,8 @@ public class SettingManager : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
+    public void SetVolumn(float volumn)
+    {
+        SoundManager.volumn = volumn;
+    }
 }
