@@ -1,0 +1,1650 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 7985 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/USER/Documents/GitHub/OnlyUp
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+61192
+Successfully changed project path to: C:/Users/USER/Documents/GitHub/OnlyUp
+C:/Users/USER/Documents/GitHub/OnlyUp
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [36812] Host "[IP] 172.17.112.1 [Port] 0 [Flags] 2 [Guid] 3088460956 [EditorId] 3088460956 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q8NOVRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [36812] Host "[IP] 172.17.112.1 [Port] 0 [Flags] 2 [Guid] 3088460956 [EditorId] 3088460956 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q8NOVRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 20.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/Documents/GitHub/OnlyUp/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.15.1272
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014003 seconds.
+- Loaded All Assemblies, in  0.405 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 286 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.612 seconds
+Domain Reload Profiling: 1014ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (160ms)
+		LoadAssemblies (122ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (156ms)
+				TypeCache.ScanAssembly (142ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (612ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (554ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (398ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (99ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.083 seconds
+Refreshing native plugins compatible for Editor in 24.79 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.126 seconds
+Domain Reload Profiling: 2208ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (811ms)
+		LoadAssemblies (602ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (300ms)
+			TypeCache.Refresh (246ms)
+				TypeCache.ScanAssembly (215ms)
+			ScanForSourceGeneratedMonoScriptInfo (43ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1127ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (935ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (40ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (558ms)
+			ProcessInitializeOnLoadMethodAttributes (209ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 12.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (1.2 MB). Loaded Objects now: 5074.
+Memory consumption went from 197.4 MB to 196.2 MB.
+Total: 10.115300 ms (FindLiveObjects: 0.454800 ms CreateObjectMapping: 0.403800 ms MarkObjects: 8.456300 ms  DeleteObjects: 0.799300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 585116.718624 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/TexturesCom_ConcreteBare0356_9_seamless_S.png
+  artifactKey: Guid(9c102f8ed79647e43b1265d353fc927a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/TexturesCom_ConcreteBare0356_9_seamless_S.png using Guid(9c102f8ed79647e43b1265d353fc927a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096ddf40c84b993dbffe2eea8096a7ba') in 0.124227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 67.704014 seconds.
+  path: Assets/Models/Realistic/tree.prefab
+  artifactKey: Guid(83550b1b358c3324e8ef30a98547d9c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/tree.prefab using Guid(83550b1b358c3324e8ef30a98547d9c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f00485880eea2f538c870517a767f5') in 0.130891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 18.476262 seconds.
+  path: Assets/Prefabs/Objects/tree.prefab
+  artifactKey: Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/tree.prefab using Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7620b7c941157276b797a8f181b2e110') in 0.048198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 3.511620 seconds.
+  path: Assets/Prefabs/Objects/Trê.prefab
+  artifactKey: Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Trê.prefab using Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09949acd3e36638e18179dc1c8fd02ec') in 0.051300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 4.870300 seconds.
+  path: Assets/Prefabs/Objects/Tree.prefab
+  artifactKey: Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Tree.prefab using Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1356bf1a6b9ccb1b759b14b510ddbb') in 0.036352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 218.534722 seconds.
+  path: Assets/Models/Realistic/Textures/Tree
+  artifactKey: Guid(86891af2fe8aee148931aa592921b5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Tree using Guid(86891af2fe8aee148931aa592921b5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc27fc1d338ebe29451f97bf440f75f') in 0.000887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.001422 seconds.
+  path: Assets/Models/Realistic/VOUSE THE FINAL.fbx
+  artifactKey: Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/VOUSE THE FINAL.fbx using Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2370bac46a3933626eb7c7c9deed35') in 0.437080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 67
+========================================================================
+Received Import Request.
+  Time since last request: 11.877815 seconds.
+  path: Assets/Prefabs/Objects/Tree.prefab
+  artifactKey: Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Objects/Tree.prefab using Guid(c18ccc68c6ff2934b9c62e2c710036bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb5df553bbdc6dd1429c963a8a346c7') in 0.003891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 422.813032 seconds.
+  path: Assets/Models/Realistic/camping.fbx
+  artifactKey: Guid(b9f3c9cf42aef064680b3a48bd4d80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/camping.fbx using Guid(b9f3c9cf42aef064680b3a48bd4d80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71dd5dec542fb53e6fd515ec6a73d88c') in 2.243202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3678
+========================================================================
+Received Import Request.
+  Time since last request: 165.370968 seconds.
+  path: Assets/Models/Realistic/camping.obj
+  artifactKey: Guid(dad1bdebf3f300144a0ba72b17fb3c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/camping.obj using Guid(dad1bdebf3f300144a0ba72b17fb3c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb83ad573dae103849c7175b8a4f9c6f') in 0.144202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1422.294276 seconds.
+  path: Assets/Models/Realistic/camping.fbx
+  artifactKey: Guid(b9f3c9cf42aef064680b3a48bd4d80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/camping.fbx using Guid(b9f3c9cf42aef064680b3a48bd4d80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3648ebbb9a29e96899b0b7a11d4466') in 1.870149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3678
+========================================================================
+Received Import Request.
+  Time since last request: 84.931599 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/Chocofur_wood_solid_10_diff.jpg
+  artifactKey: Guid(24b2caa741837fe419e2804c777c5200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/Chocofur_wood_solid_10_diff.jpg using Guid(24b2caa741837fe419e2804c777c5200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6a68b45c888ef83d3f8cb451b89ee8') in 0.112947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.239464 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_roughness.jpg
+  artifactKey: Guid(ebe2d3304c4ffb14eacd83af3b25cf5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_roughness.jpg using Guid(ebe2d3304c4ffb14eacd83af3b25cf5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b467a2d47a0958acbff035258ad0f9') in 0.023938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.405100 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_normal.jpg
+  artifactKey: Guid(1fb38ab98df76f54eace4d68671f2daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_normal.jpg using Guid(1fb38ab98df76f54eace4d68671f2daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf6081d2f9cca5b36bd26e6fddf7428') in 0.024115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.352559 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_height.jpg
+  artifactKey: Guid(b821eac4b8865e341a732e905f5ae7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_height.jpg using Guid(b821eac4b8865e341a732e905f5ae7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50bc283272d5bcbbda26d6c04d2c7c9') in 0.020990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.293200 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_ambientOcclusion.jpg
+  artifactKey: Guid(10ad367ff45106548a9cff9d8b3ca2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_ambientOcclusion.jpg using Guid(10ad367ff45106548a9cff9d8b3ca2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee668eb3eb9443d2a521776ae9b17ea1') in 0.022003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.585632 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_diffuse.jpg
+  artifactKey: Guid(01309d0224540c143984dca912c3fb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground/Dirt Mud Water_diffuse.jpg using Guid(01309d0224540c143984dca912c3fb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1644ae0449e41bb53ec343d156f86dd4') in 0.026044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 42.396927 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_LOD0.fbx
+  artifactKey: Guid(b2ee252afe5bd84428498ce032e01678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_LOD0.fbx using Guid(b2ee252afe5bd84428498ce032e01678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61deb1fe422941e7be83d53d07a83248') in 0.041661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 36.570529 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1
+  artifactKey: Guid(75b8f7bdaeb4b454f84578fdde1ffebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1 using Guid(75b8f7bdaeb4b454f84578fdde1ffebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec9891627b394e45aef7783808a69db') in 0.001141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.778949 seconds.
+  path: Assets/Models/Realistic/Textures/Camping
+  artifactKey: Guid(21898915a6d78044f8db8a0ded710ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping using Guid(21898915a6d78044f8db8a0ded710ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da68532c6d3d0fb07664d0f71b48219') in 0.000865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.122415 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp3
+  artifactKey: Guid(dbd97b081ba621e46ab2e049eb34fed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp3 using Guid(dbd97b081ba621e46ab2e049eb34fed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb675068cd3832938fe21e61bc66f31') in 0.000586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.525096 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/campfire.mat
+  artifactKey: Guid(1d77a04a51c87f74e86d00bf1d56a4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/campfire.mat using Guid(1d77a04a51c87f74e86d00bf1d56a4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc658aae5e799d5ad7b6b55dcec6abe2') in 0.038708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.285080 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/Woodcampfire.mat
+  artifactKey: Guid(4d617532f9cf6c5498461839db402bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/Woodcampfire.mat using Guid(4d617532f9cf6c5498461839db402bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a59551bfc702d276963f5bd5fc49f34') in 0.015265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.870730 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground
+  artifactKey: Guid(40571d73ea55c364da959521a10759ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground using Guid(40571d73ea55c364da959521a10759ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afe44ef1de6e0b7e520ab5a36a8d5d1') in 0.000758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 32.522004 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/ground/roundwood.jpg
+  artifactKey: Guid(93979b41b3b883a4c8cca97a0f6bb2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/ground/roundwood.jpg using Guid(93979b41b3b883a4c8cca97a0f6bb2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c0f887ea5218ceb20d9eee84412073') in 0.033488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.054331 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/previews
+  artifactKey: Guid(dcfbb2cdda04e114783815c77e76b21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/previews using Guid(dcfbb2cdda04e114783815c77e76b21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661fc1e57c985022adaad6445838ecf5') in 0.000783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.411278 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/previews/titfbczfa_Thumb_HighPoly_Retina_sp.jpg
+  artifactKey: Guid(4ed58e0e9ae64be44847aa8cb1238577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/previews/titfbczfa_Thumb_HighPoly_Retina_sp.jpg using Guid(4ed58e0e9ae64be44847aa8cb1238577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc1fa6faec7e37332e6c41f71bf38f2') in 0.020554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.341165 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/Thumbs
+  artifactKey: Guid(9d1c39f85dd2e3f49bebb6081eba7a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/Thumbs using Guid(9d1c39f85dd2e3f49bebb6081eba7a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce4e87d28e4a562defcf9cbac509b09') in 0.000931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.652136 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/Thumbs/1k
+  artifactKey: Guid(d82628268f825454bac326bd58db8efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/Thumbs/1k using Guid(d82628268f825454bac326bd58db8efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ab033065987af157023328b1df915b') in 0.001064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.991460 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/Thumbs/1k/titfbczfa_1K_Albedo.jpg
+  artifactKey: Guid(2aa3f8fd5115cff4c9daaadd0a1e6bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/Thumbs/1k/titfbczfa_1K_Albedo.jpg using Guid(2aa3f8fd5115cff4c9daaadd0a1e6bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3b0896c03ae96972c0f1936c86b14d') in 0.021402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.170920 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa.json
+  artifactKey: Guid(7e185903c8b46d4439f33e15468f4062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa.json using Guid(7e185903c8b46d4439f33e15468f4062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2bf459c46eaf5b9fbf61240aee5d6a0') in 0.005149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.549727 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_Preview.png
+  artifactKey: Guid(04f78a7410da4b741989f25e0835a5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_Preview.png using Guid(04f78a7410da4b741989f25e0835a5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f44c4c74ba420830f02f84fd9d21a4') in 0.025091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.945942 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp2/pbci2_Preview.png
+  artifactKey: Guid(bb3cc75892eb2aa438b9b88f0cdab098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp2/pbci2_Preview.png using Guid(bb3cc75892eb2aa438b9b88f0cdab098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd220aca58a388bb73195d05efa88ac1') in 0.025590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.755755 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp2/pbci2.json
+  artifactKey: Guid(d6439b8659d3d384ea816c2ddb86df13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp2/pbci2.json using Guid(d6439b8659d3d384ea816c2ddb86df13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403d9680b26b69607738251a76cc12eb') in 0.001833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.996227 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp2/Aset_wood_branch_S_pbci2_LOD0.fbx
+  artifactKey: Guid(1a95df81017585041bd47ff19c79ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp2/Aset_wood_branch_S_pbci2_LOD0.fbx using Guid(1a95df81017585041bd47ff19c79ced1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ea078eebf97aad21acba767bd0916f') in 0.028872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 4.761767 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp2/Aset_wood_branch_S_pbci2_2K_Displacement.exr
+  artifactKey: Guid(a5b36e4aea5e33d488ff51cf4e070156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp2/Aset_wood_branch_S_pbci2_2K_Displacement.exr using Guid(a5b36e4aea5e33d488ff51cf4e070156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a3f3246a93fbfa2a5a43f377f655df') in 0.055672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.426116 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp2/Aset_wood_branch_S_pbci2_2K_Roughness.jpg
+  artifactKey: Guid(1f2a99f10a6a0a046b7c03b11fadbf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp2/Aset_wood_branch_S_pbci2_2K_Roughness.jpg using Guid(1f2a99f10a6a0a046b7c03b11fadbf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd37f25f05bb5f251f97e23e06bec887') in 0.024195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 20.094654 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp2
+  artifactKey: Guid(d1524399b45b07a47849fa6c7f22bfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp2 using Guid(d1524399b45b07a47849fa6c7f22bfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd75c1d664011d10b167d72e1addc8e') in 0.013021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 102.664139 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_2K_Roughness.jpg
+  artifactKey: Guid(cde86bfc41ca09a40b0b876f39d1a27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_2K_Roughness.jpg using Guid(cde86bfc41ca09a40b0b876f39d1a27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b8e53cc784d71c4a7c8cf60486de32') in 0.033966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 124.766749 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_2K_Normal_LOD0.jpg
+  artifactKey: Guid(6165715cccd59e345bb78f1a5ebbec2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp1/titfbczfa_2K_Normal_LOD0.jpg using Guid(6165715cccd59e345bb78f1a5ebbec2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e077e2c965a96f66061556e13dc0301') in 0.046912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 33.840089 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/titfbczfa
+  artifactKey: Guid(75b8f7bdaeb4b454f84578fdde1ffebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/titfbczfa using Guid(75b8f7bdaeb4b454f84578fdde1ffebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762c1340c791b591d8cb92adf2597838') in 0.002007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.426624 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/Wood_branch
+  artifactKey: Guid(d1524399b45b07a47849fa6c7f22bfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/Wood_branch using Guid(d1524399b45b07a47849fa6c7f22bfb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd21bbc5e84d610e6f63dc58d54704fae') in 0.001337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.230525 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp3/Thumbs
+  artifactKey: Guid(f96b76954d3af4b488cbcc902d2036a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp3/Thumbs using Guid(f96b76954d3af4b488cbcc902d2036a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0890e61591271c0e4a2e5318c7ef01dc') in 0.000709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 29.879576 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/Wood_log
+  artifactKey: Guid(dbd97b081ba621e46ab2e049eb34fed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/Wood_log using Guid(dbd97b081ba621e46ab2e049eb34fed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c93100ee30fc2492812066794f9594c') in 0.002902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.244468 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp4
+  artifactKey: Guid(b1fbbff6462b16c47b1bb15f0f2b54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp4 using Guid(b1fbbff6462b16c47b1bb15f0f2b54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6de547794c886add033ff6dbc0c6d89') in 0.000712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 35.396964 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/tjrtcibda
+  artifactKey: Guid(b1fbbff6462b16c47b1bb15f0f2b54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/tjrtcibda using Guid(b1fbbff6462b16c47b1bb15f0f2b54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f456917e5136f6a0a6019564c838c07e') in 0.001387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018974 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6
+  artifactKey: Guid(6bbc171558ee6ab41be0a30c1891c758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6 using Guid(6bbc171558ee6ab41be0a30c1891c758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15046da0ed2402280b03285b437605b7') in 0.000885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.682765 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp5
+  artifactKey: Guid(46bdb88b006c22248bfc415134f151b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp5 using Guid(46bdb88b006c22248bfc415134f151b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5934c6cd96ec697d44260fa23fad0590') in 0.000901 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.031012 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp5/tjztdgxfa_LOD0.fbx
+  artifactKey: Guid(aa7c9a9fcfd9d534d8cb0401abc2699b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp5/tjztdgxfa_LOD0.fbx using Guid(aa7c9a9fcfd9d534d8cb0401abc2699b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245c2828c79b47af8418572a88c1568a') in 0.030298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 2.332424 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp5/tjztdgxfa_2K_Normal_LOD0.jpg
+  artifactKey: Guid(a9ac19d2317695e449d9dd8975e1a9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp5/tjztdgxfa_2K_Normal_LOD0.jpg using Guid(a9ac19d2317695e449d9dd8975e1a9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b570b464065b31d8299f78c97652ba2b') in 0.050174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.434406 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp5/tjztdgxfa_2K_Roughness.jpg
+  artifactKey: Guid(575fe1b79cba6c34b9043348b1285189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp5/tjztdgxfa_2K_Roughness.jpg using Guid(575fe1b79cba6c34b9043348b1285189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c72dff1b7760dbe6de2d969ca86d789') in 0.031599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.882580 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp5/Thumbs
+  artifactKey: Guid(a2a3daadfea3fca45858ae4ce6ef9cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp5/Thumbs using Guid(a2a3daadfea3fca45858ae4ce6ef9cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8986bbe7ee5f8ed6753efc88db8e4b0') in 0.000812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.553853 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp5/previews
+  artifactKey: Guid(b12b4b8cc18dbf64c9e1c037cccf3d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp5/previews using Guid(b12b4b8cc18dbf64c9e1c037cccf3d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10132a52386f47bf46342f2b7c954d0b') in 0.000782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.360165 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/tjztdgxfa
+  artifactKey: Guid(46bdb88b006c22248bfc415134f151b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/tjztdgxfa using Guid(46bdb88b006c22248bfc415134f151b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613f563013e29c71d1c620ceeb62eb92') in 0.001572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.015299 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp9
+  artifactKey: Guid(d6b493ab8732e8f4880da5541ab5e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp9 using Guid(d6b493ab8732e8f4880da5541ab5e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2462c506c58191fc0b486d271c7597') in 0.001964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 20.274049 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_2K_Normal_LOD0.jpg
+  artifactKey: Guid(d8178b2415a155541bbab3ad64a10388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_2K_Normal_LOD0.jpg using Guid(d8178b2415a155541bbab3ad64a10388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4129fa4d50cd93b6f8342cac4c10c15d') in 0.034798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.988902 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/qdyf7_Preview.png
+  artifactKey: Guid(2591879a6eb9e6a49b8e1fb68493a710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/qdyf7_Preview.png using Guid(2591879a6eb9e6a49b8e1fb68493a710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f47d7993aeed890919ae2cfee1a8606') in 0.021715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.636376 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_LOD0.fbx
+  artifactKey: Guid(99c2e64784eccfd4faf93f460d945e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_LOD0.fbx using Guid(99c2e64784eccfd4faf93f460d945e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2147926f712cd8b3e29dbf105baccdb') in 0.038987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 101.473996 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Thumbs/2k/Aset_wood_stump_M_qdyf7_2K_Displacement.jpg
+  artifactKey: Guid(c644f3c487036f842aff3ed7ba09ac22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Thumbs/2k/Aset_wood_stump_M_qdyf7_2K_Displacement.jpg using Guid(c644f3c487036f842aff3ed7ba09ac22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da24fa98f7cf8cb118b4f9d0dde3fc8') in 0.051985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Thumbs/2k/Aset_wood_stump_M_qdyf7_2K_Normal_LOD0.jpg
+  artifactKey: Guid(bf6ca0a718084c14db6b1d28fdc0efb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Thumbs/2k/Aset_wood_stump_M_qdyf7_2K_Normal_LOD0.jpg using Guid(bf6ca0a718084c14db6b1d28fdc0efb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31fe2a29a31c7057322f8a63b13e7036') in 0.039169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Factory/Textures/Factory/AtlasProps_Base_Color.png
+  artifactKey: Guid(a1a23b49d93d27a498d21a704477dedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/Factory/AtlasProps_Base_Color.png using Guid(a1a23b49d93d27a498d21a704477dedc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5be41a710c82027a12b6a1bd01b6996a') in 0.059393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_2K_Roughness.jpg
+  artifactKey: Guid(ecacd680dce8d964db8c895be8372255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_2K_Roughness.jpg using Guid(ecacd680dce8d964db8c895be8372255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cf53508aacc5ae08214173d441aab4') in 0.025359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Thumbs/2k/Aset_wood_stump_M_qdyf7_2K_Roughness.jpg
+  artifactKey: Guid(2ee7fcf375a98a4469e0ef138d15a3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Thumbs/2k/Aset_wood_stump_M_qdyf7_2K_Roughness.jpg using Guid(2ee7fcf375a98a4469e0ef138d15a3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '354349a6fe25b3a7ee5e427c7a500446') in 0.035548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Trains/Textures/b.jpg
+  artifactKey: Guid(d3cef9489cae80744afc9b83c58987de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trains/Textures/b.jpg using Guid(d3cef9489cae80744afc9b83c58987de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99f231051bc13c7ab274fcc01c3fb3a') in 0.026485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.652651 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_CONCRETE_Roughness.png
+  artifactKey: Guid(a8bfa6a18484ad2439507f57d8505d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_CONCRETE_Roughness.png using Guid(a8bfa6a18484ad2439507f57d8505d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea04b46fa99816d12a68e9147f74e707') in 0.041478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Packages/com.unity.purchasing/Icons/UnityEngine.Purchasing.IAPButtonIcon.png
+  artifactKey: Guid(55e457740fe60405dac77af143e1a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.purchasing/Icons/UnityEngine.Purchasing.IAPButtonIcon.png using Guid(55e457740fe60405dac77af143e1a867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fee6e5d0200efa3686ebb70cbddfa63') in 0.035617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_Roughness.png
+  artifactKey: Guid(39c0e2a691c38e44bb14b45fdfa85986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_Roughness.png using Guid(39c0e2a691c38e44bb14b45fdfa85986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f402141c4760b1d2362cdabf15332acd') in 0.044107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_Normal.png
+  artifactKey: Guid(b3ab5fa8bcc044f40b4b9f003b7dd783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_Normal.png using Guid(b3ab5fa8bcc044f40b4b9f003b7dd783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7035d6f88a2cf88ffa6242c28721d0c') in 0.074384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.843613 seconds.
+  path: Assets/Models/Realistic/Textures/Windmill/ChickenHouse_ChickenHouse_Normal.png
+  artifactKey: Guid(ffc44aa55a6603245879f88264854c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Windmill/ChickenHouse_ChickenHouse_Normal.png using Guid(ffc44aa55a6603245879f88264854c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1150ae64ac0bf5a60a8484495aefef07') in 0.022405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004900 seconds.
+  path: Assets/Models/Trains/Textures/ConcreteDirty0276_2_S.jpg
+  artifactKey: Guid(04f9e37ac64d08e4db656e1d69cbc3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trains/Textures/ConcreteDirty0276_2_S.jpg using Guid(04f9e37ac64d08e4db656e1d69cbc3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359e2af5772652d784428e02c10a350c') in 0.020444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Container/container_N.tga
+  artifactKey: Guid(3bc7abf58060e9a42ac092372848eb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Container/container_N.tga using Guid(3bc7abf58060e9a42ac092372848eb6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e08a1576e0ef74a906914c74dadeadd') in 0.028868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/PBR_RPG_FPS_Game_Assets_industrial/Models/Containers/Container_v1/Source/Container_v1_blue.png
+  artifactKey: Guid(d9f2c4d10f6e64647a887fb11491a164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PBR_RPG_FPS_Game_Assets_industrial/Models/Containers/Container_v1/Source/Container_v1_blue.png using Guid(d9f2c4d10f6e64647a887fb11491a164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9235b22472d1e410b80b7e33736e23cf') in 0.059640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.179909 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/Wood_stump
+  artifactKey: Guid(6bbc171558ee6ab41be0a30c1891c758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/Wood_stump using Guid(6bbc171558ee6ab41be0a30c1891c758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1f74d0888b57fc548e0da462703d85') in 0.001078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 63.856811 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp7
+  artifactKey: Guid(268215032b419e14fb3b0c8689e35906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp7 using Guid(268215032b419e14fb3b0c8689e35906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0b746169aaa4861e447d693bb13bc3') in 0.001022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.135289 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_LOD0.fbx
+  artifactKey: Guid(bea69c11bf488724aa7da5e5c7af8abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_LOD0.fbx using Guid(bea69c11bf488724aa7da5e5c7af8abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4fe2738a2868413e2e3cd2d6ca3d048') in 0.030680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.357238 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_Preview.png
+  artifactKey: Guid(7eaf8bc339e2c0a439e04092fd603869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_Preview.png using Guid(7eaf8bc339e2c0a439e04092fd603869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df10ad1e8a070b0fa12f463e13246de') in 0.022818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 19.618505 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_2K_Displacement.jpg
+  artifactKey: Guid(a45f1c21ac269e74f99033f6b179ccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_2K_Displacement.jpg using Guid(a45f1c21ac269e74f99033f6b179ccfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27d449c6a63456e3a9b0705b808084f') in 0.025656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.289757 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_2K_Displacement.exr
+  artifactKey: Guid(8407ebeb3c6cdea42917a998dbadea33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_2K_Displacement.exr using Guid(8407ebeb3c6cdea42917a998dbadea33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643ff6974d87c343c2a4fc6200c84ade') in 0.035186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.110000 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_2K_Albedo.jpg
+  artifactKey: Guid(90ec35d815175cd4cb547507541a8c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp7/vdkhbivdb_2K_Albedo.jpg using Guid(90ec35d815175cd4cb547507541a8c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934af1b3d5d905f880b66241feccbbb3') in 0.033780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.459334 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/vdkhbivdb
+  artifactKey: Guid(268215032b419e14fb3b0c8689e35906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/vdkhbivdb using Guid(268215032b419e14fb3b0c8689e35906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de1b562d0972653f73f0e4e1d2d7d3e') in 0.001556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.518239 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp8
+  artifactKey: Guid(7a128dc169590fc43bdd4567eda1c28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp8 using Guid(7a128dc169590fc43bdd4567eda1c28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5d1f9fffdf21059d569a538826fabd') in 0.000733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 15.014935 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp8/vdkkbcfqx.json
+  artifactKey: Guid(0c42de51204b8bf4e993285fbbf75056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp8/vdkkbcfqx.json using Guid(0c42de51204b8bf4e993285fbbf75056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f6559ae4db54ffb38c733b1e19e7f0') in 0.001643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.700698 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp8/Thumbs
+  artifactKey: Guid(e77b2bff7dc6873499d364f0c3842cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp8/Thumbs using Guid(e77b2bff7dc6873499d364f0c3842cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1700a87061f3801c21cb1f9255a2bfa') in 0.000794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.288138 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp8/previews
+  artifactKey: Guid(9dbf3dc4674762b4fa11acf92c7b2d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp8/previews using Guid(9dbf3dc4674762b4fa11acf92c7b2d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffcae56aab411f77b6c88714441836ad') in 0.000592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.145720 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/vdkkbcfqx
+  artifactKey: Guid(7a128dc169590fc43bdd4567eda1c28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/vdkkbcfqx using Guid(7a128dc169590fc43bdd4567eda1c28a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a7692377ce8e59e45bdff05eeda74a') in 0.001220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.951749 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp9/Thumbs
+  artifactKey: Guid(7ce046ba66f633d42bb54b5c296ed17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp9/Thumbs using Guid(7ce046ba66f633d42bb54b5c296ed17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64aefe21988b56ad1ec736113c5f89ae') in 0.000666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.440169 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp9/vcjofafdb.json
+  artifactKey: Guid(8cb8eba662817054383b98a789789d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp9/vcjofafdb.json using Guid(8cb8eba662817054383b98a789789d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b6f4433b94bde5d2fb61ecd99b5cd8c') in 0.001674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.005161 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp9/vcjofafdb_LOD0.fbx
+  artifactKey: Guid(c5e627c5dc50c954784199d914166380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp9/vcjofafdb_LOD0.fbx using Guid(c5e627c5dc50c954784199d914166380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11aec62a7dcd4f4577b838246260e35a') in 0.030104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.308086 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp9/vcjofafdb_LOD1.fbx
+  artifactKey: Guid(2d206bf9ef4c32f489f63b9208cc0dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp9/vcjofafdb_LOD1.fbx using Guid(2d206bf9ef4c32f489f63b9208cc0dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081d1e92dbae1c5bee749c88e4e59beb') in 0.026593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 10.154938 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/vcjofafdb
+  artifactKey: Guid(d6b493ab8732e8f4880da5541ab5e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/vcjofafdb using Guid(d6b493ab8732e8f4880da5541ab5e1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd733c8fe5ca376449ff30b40b37c3b') in 0.001386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 79.362804 seconds.
+  path: Assets/Models/Realistic/camping.fbx
+  artifactKey: Guid(b9f3c9cf42aef064680b3a48bd4d80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/camping.fbx using Guid(b9f3c9cf42aef064680b3a48bd4d80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd4115a2945f48e9268b54572bed949') in 1.394646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3681
+========================================================================
+Received Import Request.
+  Time since last request: 885.802050 seconds.
+  path: Assets/Models/Realistic/Textures/Wood
+  artifactKey: Guid(21898915a6d78044f8db8a0ded710ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood using Guid(21898915a6d78044f8db8a0ded710ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7e949420ee724668ad21e1e34f98f5') in 0.002684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 20.574192 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/Aset_wood_branch_S_pbci2_LOD0.prefab
+  artifactKey: Guid(3064321960d87cb4e98c40336ee66175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/Aset_wood_branch_S_pbci2_LOD0.prefab using Guid(3064321960d87cb4e98c40336ee66175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd564ddf69af04a000323c6a9780a9bdb') in 0.174017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 8.239809 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/Aset_wood_log_M_pcvs2_LOD0.prefab
+  artifactKey: Guid(7dfcd2f976924d34e99176be0124a55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/Aset_wood_log_M_pcvs2_LOD0.prefab using Guid(7dfcd2f976924d34e99176be0124a55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3e7254a0307bf9f9c1c6a1f391b294') in 0.041883 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 5.390994 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/Aset_wood_stump_M_qdyf7_LOD0.prefab
+  artifactKey: Guid(8e938e6abadb3b547b888d0a941c89ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/Aset_wood_stump_M_qdyf7_LOD0.prefab using Guid(8e938e6abadb3b547b888d0a941c89ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad49387784131834c3722bd47c06b6e4') in 0.070735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 7028.944367 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/titfbczfa_LOD0.prefab
+  artifactKey: Guid(59ff4a3c8f83c554c9a3c6a22a8b50c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/titfbczfa_LOD0.prefab using Guid(59ff4a3c8f83c554c9a3c6a22a8b50c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053dbb711178c50304a4a26fcf9e7d2f') in 0.477857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.549633 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/tjztdgxfa_LOD0.prefab
+  artifactKey: Guid(c0b3e2c709c414649a8db5ebc53b6542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/tjztdgxfa_LOD0.prefab using Guid(c0b3e2c709c414649a8db5ebc53b6542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8b622534ce8e650a8b765eaae9c019') in 0.146339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.520153 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/vcjofafdb_LOD0.prefab
+  artifactKey: Guid(97fc57aed7c5cc54194502a15b3d7186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/vcjofafdb_LOD0.prefab using Guid(97fc57aed7c5cc54194502a15b3d7186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea370160905f6f658172b1d286d9929f') in 0.128931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.511897 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/vdkhbivdb_LOD0.prefab
+  artifactKey: Guid(8a9cea5f6ea2b77419307adb0757a241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/vdkhbivdb_LOD0.prefab using Guid(8a9cea5f6ea2b77419307adb0757a241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604a4f39e24eba4d3ac5fb9ec0fd12a4') in 0.101701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.569677 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/vdkkbcfqx_LOD0.prefab
+  artifactKey: Guid(8c6bf06d20e2e59419532ffb191b3ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/vdkkbcfqx_LOD0.prefab using Guid(8c6bf06d20e2e59419532ffb191b3ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77cb95fa66742ee3dfbb6790cd81428') in 0.130548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.829526 seconds.
+  path: Assets/Models/Realistic/Textures/Wood/tjrtcibda_LOD0.prefab
+  artifactKey: Guid(389975f4dee49b448a8c8a83af89017e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Wood/tjrtcibda_LOD0.prefab using Guid(389975f4dee49b448a8c8a83af89017e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de14a9c5edb2d0f038e4e0fe7d62f8c') in 0.113955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 38.373326 seconds.
+  path: Assets/Models/Realistic/Textures/MH
+  artifactKey: Guid(a42bcf52e910b874a9537fdf076ca78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH using Guid(a42bcf52e910b874a9537fdf076ca78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a931a37a6c5902a6a129ad6a994b4bdd') in 0.001402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 17.077336 seconds.
+  path: Assets/Models/Realistic/MH_all_parts2.fbx
+  artifactKey: Guid(b1575af0a4122424fada04c927b518ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/MH_all_parts2.fbx using Guid(b1575af0a4122424fada04c927b518ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f477fcce60b12635bd1f06611d66b36b') in 2.301666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1223
+========================================================================
+Received Import Request.
+  Time since last request: 3.505066 seconds.
+  path: Assets/Models/Realistic/MH_all_parts2.fbx
+  artifactKey: Guid(b1575af0a4122424fada04c927b518ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/MH_all_parts2.fbx using Guid(b1575af0a4122424fada04c927b518ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4367ccd05b882db0b37b27428ee69b') in 1.983197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1223
+========================================================================
+Received Import Request.
+  Time since last request: 1.893698 seconds.
+  path: Assets/Models/Realistic/MH.fbx
+  artifactKey: Guid(b1575af0a4122424fada04c927b518ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/MH.fbx using Guid(b1575af0a4122424fada04c927b518ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd4f9d371f1461c1c99d68de452759e') in 1.974584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1223
+========================================================================
+Received Import Request.
+  Time since last request: 9.425891 seconds.
+  path: Assets/Models/Trains/Textures/glass/mga.tga
+  artifactKey: Guid(fe3a5c0103a6ea7459443bc117d0eb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trains/Textures/glass/mga.tga using Guid(fe3a5c0103a6ea7459443bc117d0eb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85537bb790ed5a61a2c588842de88c6') in 0.204083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part1_albedo.jpg
+  artifactKey: Guid(086eaddec28eadd4992e6af69f85ac0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part1_albedo.jpg using Guid(086eaddec28eadd4992e6af69f85ac0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebcf1bd5c4a2f10fdd1e80469e121b96') in 0.050354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part1_metallic.jpg
+  artifactKey: Guid(c96215cc8bea15e488c7855b806abe19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part1_metallic.jpg using Guid(c96215cc8bea15e488c7855b806abe19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534d9a59a8e109094e44c2157148f168') in 0.032486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part1_emissive.jpg
+  artifactKey: Guid(9419414cbb1fc3c46a3a51c082737929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part1_emissive.jpg using Guid(9419414cbb1fc3c46a3a51c082737929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '570baadc1d7eb8cedc745fc08225e24e') in 0.030779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part2_emissive.jpg
+  artifactKey: Guid(14a1890af06249a4b86562a02649d43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part2_emissive.jpg using Guid(14a1890af06249a4b86562a02649d43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19650bbce663a86fdc01eaf82f6b374b') in 0.030966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part2_normal.png
+  artifactKey: Guid(db7e8c426672a974daffaa7e087cac5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part2_normal.png using Guid(db7e8c426672a974daffaa7e087cac5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32999c7551a396bc27490c133d1b7c0') in 0.028851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part1_normal.png
+  artifactKey: Guid(393a2a66e2287bc488b64ec84709f75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part1_normal.png using Guid(393a2a66e2287bc488b64ec84709f75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304079cff2ad502ee16d9a07c6812c11') in 0.034289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part2_albedo.jpg
+  artifactKey: Guid(7b392a4715748d14e97f29ce8c1e6d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part2_albedo.jpg using Guid(7b392a4715748d14e97f29ce8c1e6d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '066b7ac2467f6b937e60af56ca28901b') in 0.034299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part2_AO.jpg
+  artifactKey: Guid(c18580db0f699e046988628ef4f51738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part2_AO.jpg using Guid(c18580db0f699e046988628ef4f51738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25daaf240c2f043b814c22aeeaada6b') in 0.033196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part2_metallic.jpg
+  artifactKey: Guid(a39920df440cfab49a326ebc66fce8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part2_metallic.jpg using Guid(a39920df440cfab49a326ebc66fce8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb311adee040d64201b64059c311b3ff') in 0.024299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part3_albedo.jpg
+  artifactKey: Guid(5db1863a0ca1600479ba103b9bb5cfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part3_albedo.jpg using Guid(5db1863a0ca1600479ba103b9bb5cfb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d82fdba0a7d9f6c0310625e83dd2659') in 0.035716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part3_AO.jpg
+  artifactKey: Guid(6eff872e36239f042837f292f974511c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part3_AO.jpg using Guid(6eff872e36239f042837f292f974511c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35bf2e0ccc043430c95499f6268218e1') in 0.032002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 126.941026 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland
+  artifactKey: Guid(4cfd5458a15e0a347a3fdc57c3454733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland using Guid(4cfd5458a15e0a347a3fdc57c3454733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bdddf6f432f603459158bba704585bc') in 0.008763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.992865 seconds.
+  path: Assets/Models/Realistic/Final Island.fbx
+  artifactKey: Guid(9aa20356e92eb3944812b3c648b7791b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Final Island.fbx using Guid(9aa20356e92eb3944812b3c648b7791b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6bb8c22fc792634a787288aa2afd7d0') in 0.326580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 7.138052 seconds.
+  path: Assets/Models/Realistic/Final Island.fbx
+  artifactKey: Guid(9aa20356e92eb3944812b3c648b7791b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Final Island.fbx using Guid(9aa20356e92eb3944812b3c648b7791b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbf39951a318e3babf34ca3bbea33a3') in 0.194529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 44.436703 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Bridge_BaseMap.png
+  artifactKey: Guid(0974b895199137b468c75548fd742724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Bridge_BaseMap.png using Guid(0974b895199137b468c75548fd742724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f83015badd385621f79c0c80635f182') in 0.063298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.610105 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Black.mat
+  artifactKey: Guid(b7cbf6dd8e387d0488c51e81f12673fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Black.mat using Guid(b7cbf6dd8e387d0488c51e81f12673fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ac7ea898c98fe19d8cca90bd6e5965') in 0.029457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_BaseColor.png
+  artifactKey: Guid(037a839c40816344691bd73801184d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_BaseColor.png using Guid(037a839c40816344691bd73801184d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91cf7ac5419910d5711c7fb4b8d55bc6') in 0.066883 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Normal.png
+  artifactKey: Guid(49fb07e08494875498e8d8b8e367cf12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Normal.png using Guid(49fb07e08494875498e8d8b8e367cf12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3123e48b310ef712967bcdea13391da6') in 0.046697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Bridge_Normal.png
+  artifactKey: Guid(2a036e7cdbfb14447941421ff52f6c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Bridge_Normal.png using Guid(2a036e7cdbfb14447941421ff52f6c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d90e0b6d553e31016b2ccb59757576') in 0.038803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Bush_BaseColour.png
+  artifactKey: Guid(cb2dae6a7cd6f83429dbaf227cef6810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Bush_BaseColour.png using Guid(cb2dae6a7cd6f83429dbaf227cef6810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d69c0bfc8e9d49f7d2dc7b61827645') in 0.036131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_BaseColor.png
+  artifactKey: Guid(a91288751618ae742b8dd12575d1ad55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_BaseColor.png using Guid(a91288751618ae742b8dd12575d1ad55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23383cb242cf182cbfd4b05e35c4aa8c') in 0.037956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Roughness.png
+  artifactKey: Guid(b99113e3d63bc41418ccee14eedfa07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Roughness.png using Guid(b99113e3d63bc41418ccee14eedfa07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fa4da43f1df17fdd414f43187c5cc2') in 0.038717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_Normal.png
+  artifactKey: Guid(da6d16a92c195534099ba167d4fbdc99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_Normal.png using Guid(da6d16a92c195534099ba167d4fbdc99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9756a20730292a6283e673ce7251c593') in 0.036802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Metalness.png
+  artifactKey: Guid(df36870746f06c743bbd39661ec7ff3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Metalness.png using Guid(df36870746f06c743bbd39661ec7ff3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80f883993d8227e8c746f6c0fa67240') in 0.037099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/ButterFly_Alpha.png
+  artifactKey: Guid(57b1d20d875d0bd45ac5b817c43bf0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/ButterFly_Alpha.png using Guid(57b1d20d875d0bd45ac5b817c43bf0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b7e0b65a535e02e36c90c724cc6bdb') in 0.034579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_Metalness.png
+  artifactKey: Guid(2474958ddafeafd4fa9119e81920acc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_Metalness.png using Guid(2474958ddafeafd4fa9119e81920acc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed231dd371a317e5d18b6145da46ad5') in 0.032353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_Roughness.png
+  artifactKey: Guid(f321f35a8122db849872fdbae5296500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_lambert1.001_Roughness.png using Guid(f321f35a8122db849872fdbae5296500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d5499a5e8dafa08c666c7d39b0699c') in 0.031234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/HouseOutSide_Low_OutsideHouse_Mat_BaseColo.png
+  artifactKey: Guid(34d544c18a12ffc43bc50d6c6444f1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/HouseOutSide_Low_OutsideHouse_Mat_BaseColo.png using Guid(34d544c18a12ffc43bc50d6c6444f1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b60081f45ca7c4326b5a013915aad24') in 0.033010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Water_BaseColor.png
+  artifactKey: Guid(f16f6241c7a9dc3419b930f2ba3ee0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Water_BaseColor.png using Guid(f16f6241c7a9dc3419b930f2ba3ee0b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd77c2ac3cec3e140cfbd06a22f1b995c') in 0.036881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Bush_Roughness.png
+  artifactKey: Guid(83d6615cb108ed54dadc991f77dde744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Bush_Roughness.png using Guid(83d6615cb108ed54dadc991f77dde744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b59533d85d5bef29e8f1706d0d4a8894') in 0.030833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Grass_Mat_BaseColor.png
+  artifactKey: Guid(05bb8ec6d256cd445bdd5f35f4da8a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Grass_Mat_BaseColor.png using Guid(05bb8ec6d256cd445bdd5f35f4da8a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e9debef1ead524ca098c937e7f21ad') in 0.033942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Chimneys_Low_FirePlaceRoof_Mat_BaseColor.png
+  artifactKey: Guid(3ba7073618b73a54ba6d04bba23306bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Chimneys_Low_FirePlaceRoof_Mat_BaseColor.png using Guid(3ba7073618b73a54ba6d04bba23306bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6240bf43ab5a935031e8e22f8e72aa36') in 0.030900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Emissive2.png
+  artifactKey: Guid(9418cab083558be4aa5eb6c5def141f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Emissive2.png using Guid(9418cab083558be4aa5eb6c5def141f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470e84a27daac41ad9aaa1af3822333f') in 0.032447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Opacity.png
+  artifactKey: Guid(c3d5299713a89ad45b905f489936f0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert1_Opacity.png using Guid(c3d5299713a89ad45b905f489936f0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ea99f5995de1efadc5bba31386da93') in 0.040284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Bridge_Roughness.png
+  artifactKey: Guid(d92331bc6a8f1244594aa3e555ba7d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Bridge_Roughness.png using Guid(d92331bc6a8f1244594aa3e555ba7d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd14510fce7e53de6b36c7fd043d9a39') in 0.041184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 43.754096 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Chimneys_Low_FirePlaceRoof_Mat_Metalness.png
+  artifactKey: Guid(88930f87223ce9d4cb0152c10f207026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Chimneys_Low_FirePlaceRoof_Mat_Metalness.png using Guid(88930f87223ce9d4cb0152c10f207026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e316f8664d1e404974827ecc41d2a87') in 0.077155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Grass_Grass_Normal.png
+  artifactKey: Guid(bfcda58960114304992ef0d0d59ce782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Grass_Grass_Normal.png using Guid(bfcda58960114304992ef0d0d59ce782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36975635b22409c9317ad45761b2400') in 0.044362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Final_Rocks2_Mat.mat
+  artifactKey: Guid(441eac59014b3f54ca9e48c0f1b3d60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Final_Rocks2_Mat.mat using Guid(441eac59014b3f54ca9e48c0f1b3d60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3045f156987d1684083881354731d8b7') in 0.025693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_HouseOther_Low.001_Roughness.png
+  artifactKey: Guid(df98753b9f1d65e4f859e1cd37438747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_HouseOther_Low.001_Roughness.png using Guid(df98753b9f1d65e4f859e1cd37438747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f949772c98bf21cd3dd473f2b6aa52e') in 0.046011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_Door_Low.001_Metalness.png
+  artifactKey: Guid(a0ef43ec1bf8b3240b2de7251c3e4db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_Door_Low.001_Metalness.png using Guid(a0ef43ec1bf8b3240b2de7251c3e4db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f379f5987c77cfc740b096148d0a2b') in 0.040393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.263695 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Rocks_Low_standardSurface1_BaseColor.png
+  artifactKey: Guid(cf863fe947bf8dc43a1f2c75cd8324df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Rocks_Low_standardSurface1_BaseColor.png using Guid(cf863fe947bf8dc43a1f2c75cd8324df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bd538c0c2f077849813d01b427f667') in 0.042638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 45.031613 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_Window_1_Low.001_Metalness.png
+  artifactKey: Guid(18ea6d7d58bd4bb439f8d3d22866ad96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_Window_1_Low.001_Metalness.png using Guid(18ea6d7d58bd4bb439f8d3d22866ad96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b0b81f384bd114b1d8c673f13916b4') in 0.046160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.440349 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Sack_BaseMap.png
+  artifactKey: Guid(680726b59d874d644af834bbe1982699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Sack_BaseMap.png using Guid(680726b59d874d644af834bbe1982699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9e5a28b1b6e79d1232a57547559bdc') in 0.047893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 21.282972 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/House_Low_Window_1_Low.001_Normal.png
+  artifactKey: Guid(b54fa343daa1d8244aea341e615c028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/House_Low_Window_1_Low.001_Normal.png using Guid(b54fa343daa1d8244aea341e615c028f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a2c5ceee0aaab040097394ba197ccf') in 0.049756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.286246 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_Water_Mat.mat
+  artifactKey: Guid(dd665452635068340a21af50be370843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_Water_Mat.mat using Guid(dd665452635068340a21af50be370843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692ab80222cbd1c3d7919c068efed8b8') in 0.021188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/TileableWall_Roughness.png
+  artifactKey: Guid(aacaac88b684eec4a86be7940b4ff422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/TileableWall_Roughness.png using Guid(aacaac88b684eec4a86be7940b4ff422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c30a51cfe4aa5893062018c52deae58') in 0.028550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.301352 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Island_Mat_Normal.png
+  artifactKey: Guid(4b44d2b58ec774b4e86dcdbe3890d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Island_Mat_Normal.png using Guid(4b44d2b58ec774b4e86dcdbe3890d56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c889f9739c8625c7d2bc7f9c3370f6') in 0.030834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.005875 seconds.
+  path: Assets/Models/STATION/Texture/KEHFRIS.JPG
+  artifactKey: Guid(e6e11a92fe648f6419733e563e17b41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/STATION/Texture/KEHFRIS.JPG using Guid(e6e11a92fe648f6419733e563e17b41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6663d197d2e0563f153849e88535d623') in 0.028956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004634 seconds.
+  path: Assets/Models/STATION/Texture/KEHLCT4.JPG
+  artifactKey: Guid(e5a7968ba4da1954e90feca0f3b44219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/STATION/Texture/KEHLCT4.JPG using Guid(e5a7968ba4da1954e90feca0f3b44219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5c4fae658b56f8f592777d967467c6') in 0.022398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.410830 seconds.
+  path: Assets/Models/Realistic/Textures/Windmill/Tools_Tools_Normal.png
+  artifactKey: Guid(c9bbe8b7005c3a747bc4c658f1a4c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Windmill/Tools_Tools_Normal.png using Guid(c9bbe8b7005c3a747bc4c658f1a4c879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f906e7e4ebfa4fe09ddc8907349ba3') in 0.087975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_CONCRETE_Normal.png
+  artifactKey: Guid(7ad4555878e647645a879c1b8e8726bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_CONCRETE_Normal.png using Guid(7ad4555878e647645a879c1b8e8726bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2a923560fdf2e105a83a9dcb9b0c65') in 0.034914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_frame_BaseColor.png
+  artifactKey: Guid(eef8358c8e00440408e7ae3fe6232981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_frame_BaseColor.png using Guid(eef8358c8e00440408e7ae3fe6232981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29da6e6a7080ecd203835eaf1007a598') in 0.029927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_GLASS_Normal.png
+  artifactKey: Guid(c578604fb7a5e7c40961a3fb4110869f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_GLASS_Normal.png using Guid(c578604fb7a5e7c40961a3fb4110869f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3618ac1da5ea81de8f0b73450d9d9cc8') in 0.037195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 23.322558 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_HouseJoins_Mat.mat
+  artifactKey: Guid(52f833f5c9ac2854e864c9ff9401318e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_HouseJoins_Mat.mat using Guid(52f833f5c9ac2854e864c9ff9401318e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ed83322cb4a5a1be8ad5e263195965c') in 0.028783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 37.355688 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Grass_Mat_Metalness.png
+  artifactKey: Guid(085f7df676d186c439780b0ca2f62a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Island_Final_Grass_Mat_Metalness.png using Guid(085f7df676d186c439780b0ca2f62a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05c9518d174d2fe246e7d4e63470099') in 0.066434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/PineTree_Roughness.png
+  artifactKey: Guid(53df7c783c8575e4e860547c0fa5b0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/PineTree_Roughness.png using Guid(53df7c783c8575e4e860547c0fa5b0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec77d9b9eba7ef4a59514468f55d9fe0') in 0.042526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/MineCart_Roughness.png
+  artifactKey: Guid(5f3645521fc9474488c9318a8ac12de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/MineCart_Roughness.png using Guid(5f3645521fc9474488c9318a8ac12de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f3510f0fb9d64d14d1783f969cf0d6') in 0.033878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Plaster_Rougnessl.png
+  artifactKey: Guid(9e2ec3a009532f842a48ed08c44956e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Plaster_Rougnessl.png using Guid(9e2ec3a009532f842a48ed08c44956e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229f9890711a75538216e7d508fcc057') in 0.033291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.275552 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_Grass_Mat.mat
+  artifactKey: Guid(4a9955395ea9e0a489a206bb3482471a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_Grass_Mat.mat using Guid(4a9955395ea9e0a489a206bb3482471a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd95be40618c333465e883dd28ba762e') in 0.023927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 38.936159 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Roofs_BaseColor.png
+  artifactKey: Guid(9a382b8fc795eb246a488c2c2f8a8f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Roofs_BaseColor.png using Guid(9a382b8fc795eb246a488c2c2f8a8f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4e19f4051879c8252022643f464461') in 0.050334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 32.699914 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_Windows_Mat.mat
+  artifactKey: Guid(7fbca2ce42e92364a832be82d69fa77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_Windows_Mat.mat using Guid(7fbca2ce42e92364a832be82d69fa77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a262aac60cffa851c21e8b61c02af750') in 0.031307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 27.865417 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert2_BaseColor.png
+  artifactKey: Guid(ae6a3f6e005a2b94692bfb25ea4f5207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lamp_Low_lambert2_BaseColor.png using Guid(ae6a3f6e005a2b94692bfb25ea4f5207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96b9552335db894330de7eb7ebbdc391') in 0.047484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Stalamites_Low_lambert1_Normal.png
+  artifactKey: Guid(eba8729f1510861479567c88470f6a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Stalamites_Low_lambert1_Normal.png using Guid(eba8729f1510861479567c88470f6a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d72789b29cd1abf47915e505f5b2231') in 0.040760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Plane_lambert1_Normal.png
+  artifactKey: Guid(5e35380909859d34aa37139fd7b17be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Plane_lambert1_Normal.png using Guid(5e35380909859d34aa37139fd7b17be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e288905e3d3e717efb06bdfe00b3e3d') in 0.037387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Plane_lambert1_BaseMap.png
+  artifactKey: Guid(23d333835c95cc947bec0af68391e92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Plane_lambert1_BaseMap.png using Guid(23d333835c95cc947bec0af68391e92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f668679a27ec3a72accc03b2b8502f8b') in 0.037360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Stalamites_Low_lambert1_BaseColor.png
+  artifactKey: Guid(f115e045799d3af46b1ec8a9c259b4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Stalamites_Low_lambert1_BaseColor.png using Guid(f115e045799d3af46b1ec8a9c259b4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '060ead8d291cfdffb1d7328d4566643e') in 0.042059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.131495 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_ButterFly_Mat.mat
+  artifactKey: Guid(977d6a91d8472e54fb0f24232cac99ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_ButterFly_Mat.mat using Guid(977d6a91d8472e54fb0f24232cac99ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9cfa26cb3daa0b657569291d1f03aba') in 0.024310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.802073 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Rails_BaseMap.png
+  artifactKey: Guid(aa18cd263eb063d4898a323ebdf0dc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Rails_BaseMap.png using Guid(aa18cd263eb063d4898a323ebdf0dc84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7d0269d0448c414476f62c1c692c18') in 0.041280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_Rail_Mat.mat
+  artifactKey: Guid(6a5c0414fe1921043a4b9a9b79302e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_Rail_Mat.mat using Guid(6a5c0414fe1921043a4b9a9b79302e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7306781e420d4063268754363bf312cd') in 0.021351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 18.505425 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Plaster_BaseMap.png
+  artifactKey: Guid(621492758acd43748a4dbf407a583e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Plaster_BaseMap.png using Guid(621492758acd43748a4dbf407a583e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0296887f66dd607be57fc2e2ee23f60') in 0.041053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 16.190155 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_Bush_Mat.mat
+  artifactKey: Guid(d923ea45f1ea05e4ca1030b9eb2000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_Bush_Mat.mat using Guid(d923ea45f1ea05e4ca1030b9eb2000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1bed670977ac5c8266871be04d0d7a') in 0.026446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 42.888181 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/Lilly_BaseColour.png
+  artifactKey: Guid(662bef5db8cd6a242ad213c5db6e545b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/Lilly_BaseColour.png using Guid(662bef5db8cd6a242ad213c5db6e545b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3fa1ca1eaa84b521c1c604350f3a007') in 0.043978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/MineCart_Normal.png
+  artifactKey: Guid(78222a873b3c55a4aa7e3dc02445759c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/MineCart_Normal.png using Guid(78222a873b3c55a4aa7e3dc02445759c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f076f1b1ab9f81dd932e1f229d5bfa6') in 0.051093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 23.831176 seconds.
+  path: Assets/Models/Realistic/Textures/FinalIsland/SF_Door_Mat.mat
+  artifactKey: Guid(a68bfee32d0b7864ab487fd5a44d883b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/FinalIsland/SF_Door_Mat.mat using Guid(a68bfee32d0b7864ab487fd5a44d883b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a189fe2c2ed213d7bc8d8cf9e1d5615') in 0.024383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 74.975970 seconds.
+  path: Assets/FourEvilDragonsHP/Texture/DragonUsurper/GreenHP.png
+  artifactKey: Guid(7a1f130c4e7de554bb8a7f12d6a06ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FourEvilDragonsHP/Texture/DragonUsurper/GreenHP.png using Guid(7a1f130c4e7de554bb8a7f12d6a06ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2ba1f3e08a6af1685e176fe5daef4b4') in 0.092161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/FourEvilDragonsHP/Texture/DragonNightmare/GreenHP.png
+  artifactKey: Guid(9dba242174cb8a2479a67b286bf5a92c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FourEvilDragonsHP/Texture/DragonNightmare/GreenHP.png using Guid(9dba242174cb8a2479a67b286bf5a92c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1703b9aa1831e58f7671ced823f28c6d') in 0.044794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

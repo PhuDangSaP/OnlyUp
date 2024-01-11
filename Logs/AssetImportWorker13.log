@@ -1,0 +1,346 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 7985 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker13
+-projectPath
+C:/Users/USER/Documents/GitHub/OnlyUp
+-logFile
+Logs/AssetImportWorker13.log
+-srvPort
+61192
+Successfully changed project path to: C:/Users/USER/Documents/GitHub/OnlyUp
+C:/Users/USER/Documents/GitHub/OnlyUp
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [340] Host "[IP] 172.17.112.1 [Port] 0 [Flags] 2 [Guid] 3911560140 [EditorId] 3911560140 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q8NOVRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [340] Host "[IP] 172.17.112.1 [Port] 0 [Flags] 2 [Guid] 3911560140 [EditorId] 3911560140 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q8NOVRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 24.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/Documents/GitHub/OnlyUp/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.15.1272
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.036119 seconds.
+- Loaded All Assemblies, in  0.540 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 347 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.719 seconds
+Domain Reload Profiling: 1256ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (121ms)
+	LoadAllAssembliesAndSetupDomain (190ms)
+		LoadAssemblies (158ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (186ms)
+				TypeCache.ScanAssembly (171ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (720ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (653ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (463ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.279 seconds
+Refreshing native plugins compatible for Editor in 18.65 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.075 seconds
+Domain Reload Profiling: 2330ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (1002ms)
+		LoadAssemblies (759ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (338ms)
+			TypeCache.Refresh (302ms)
+				TypeCache.ScanAssembly (250ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1076ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (882ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (572ms)
+			ProcessInitializeOnLoadMethodAttributes (161ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 14.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (1.2 MB). Loaded Objects now: 5074.
+Memory consumption went from 197.5 MB to 196.3 MB.
+Total: 9.583600 ms (FindLiveObjects: 0.571100 ms CreateObjectMapping: 0.550700 ms MarkObjects: 7.825200 ms  DeleteObjects: 0.635300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 599421.438048 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Main_Building_MB.PILLARS_Metalness.png
+  artifactKey: Guid(9df80a5c04fb8e24abd51135b790655f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Main_Building_MB.PILLARS_Metalness.png using Guid(9df80a5c04fb8e24abd51135b790655f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c120bdfd80e183b864be6475d9bf725') in 0.127248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 33.583823 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_BaseColor.png
+  artifactKey: Guid(53f6eced281c33346a3846abe124ebbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_BaseColor.png using Guid(53f6eced281c33346a3846abe124ebbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0c4287436bdc0893c89d663015929b') in 0.043778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Main_Building_MB.WALLS_Metalness.png
+  artifactKey: Guid(2c132c30d3c36ff44929697c36b8db79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Main_Building_MB.WALLS_Metalness.png using Guid(2c132c30d3c36ff44929697c36b8db79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac07a49c7fcff80e2935006bf83d66f') in 0.031878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_Metalness.png
+  artifactKey: Guid(58ef0c5f7cbf96842a1f52926621e1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_Metalness.png using Guid(58ef0c5f7cbf96842a1f52926621e1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1cb69e9118e1e86856efa2d771f61c') in 0.026079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_Normal.png
+  artifactKey: Guid(f56fbe10aa8bc1e40a309942b38812ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_Normal.png using Guid(f56fbe10aa8bc1e40a309942b38812ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace03712ebabc244088545f0ffe46f2e') in 0.038831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_Height.png
+  artifactKey: Guid(5deaaa15353fbd14b93d35082090c630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Main_Building_MB.ROOF_Height.png using Guid(5deaaa15353fbd14b93d35082090c630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1164c3a270bfbd73182746d6dbff9556') in 0.033135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.767579 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/IAD_CYl_Normal.png
+  artifactKey: Guid(6c95069475869854f8da5fd6bd503ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/IAD_CYl_Normal.png using Guid(6c95069475869854f8da5fd6bd503ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd582489cccb4b1dbe6838f2c9d44a60') in 0.037194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/IAD_CYl_Roughness.png
+  artifactKey: Guid(024992495f8bb054cbf2a4b7cbb1da68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/IAD_CYl_Roughness.png using Guid(024992495f8bb054cbf2a4b7cbb1da68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8ab2bc6f79d79d685cc31162284924') in 0.039933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/Material #5.mat
+  artifactKey: Guid(cc0367c9c0afcff4db0cc5a3646b42c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/Material #5.mat using Guid(cc0367c9c0afcff4db0cc5a3646b42c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429b7306951104237f9288140e4bafba') in 0.100329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.120657 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Box_Roughness.png
+  artifactKey: Guid(2c06d7d5dedd9fb41b211b3089ec7c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Box_Roughness.png using Guid(2c06d7d5dedd9fb41b211b3089ec7c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21db8dfeb6fc15e034b2d5e2e702757a') in 0.038127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Roof_Roughness.png
+  artifactKey: Guid(3294d557dced9ea458fd8118a9eab576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Roof_Roughness.png using Guid(3294d557dced9ea458fd8118a9eab576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcefabeb2384edb95e6de1342c42d72e') in 0.038938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Roof_BaseColor.png
+  artifactKey: Guid(f6ed78e3dcbfc374b8f2eed39884a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Roof_BaseColor.png using Guid(f6ed78e3dcbfc374b8f2eed39884a268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '507df947a0abf393f84e4133d80feab8') in 0.046016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 31.746381 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/IAD_CYl_Metalness.png
+  artifactKey: Guid(1f11473b65e375e45887b27535d7cef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/IAD_CYl_Metalness.png using Guid(1f11473b65e375e45887b27535d7cef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c001db6a8b1c1bc94f7aae0bcc5df0') in 0.025891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Body_BaseColor.png
+  artifactKey: Guid(949c145cd5ef1234cb779e1398643435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Body_BaseColor.png using Guid(949c145cd5ef1234cb779e1398643435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c35146f3694b64613b1bc85c2ef3c697') in 0.038348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_List_BaseColor.png
+  artifactKey: Guid(8fb9f5523e9842a40928ce6384d31e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_List_BaseColor.png using Guid(8fb9f5523e9842a40928ce6384d31e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447d175d1b2783019a7780abff304e16') in 0.028278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 31.291617 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_List_Normal.png
+  artifactKey: Guid(8a9ae7bfe951e10468d811338068699a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_List_Normal.png using Guid(8a9ae7bfe951e10468d811338068699a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df11c8a063b7f773611499a364b242f0') in 0.041789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 34.803099 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Barrels_Metalness.png
+  artifactKey: Guid(97c517f5fb0626144b39f58363989b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Barrels_Metalness.png using Guid(97c517f5fb0626144b39f58363989b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1c8b2495147c0b45e524877a3d2e25') in 0.025954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Box_Normal.png
+  artifactKey: Guid(bf38030f03088f345ab89cbd15276c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Box_Normal.png using Guid(bf38030f03088f345ab89cbd15276c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc83fbeb2a1ef3d9d598925e205d715') in 0.035683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Realistic/Textures/UAS/wagon_Barrels_Normal.png
+  artifactKey: Guid(a9156c9274185714b9d6c0675c10666a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/UAS/wagon_Barrels_Normal.png using Guid(a9156c9274185714b9d6c0675c10666a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99763e70d2940a89c152df169fc1f3c5') in 0.037924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

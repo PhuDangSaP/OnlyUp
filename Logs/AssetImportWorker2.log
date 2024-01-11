@@ -1,0 +1,762 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 7985 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/USER/Documents/GitHub/OnlyUp
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+61192
+Successfully changed project path to: C:/Users/USER/Documents/GitHub/OnlyUp
+C:/Users/USER/Documents/GitHub/OnlyUp
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [35096] Host "[IP] 172.17.112.1 [Port] 0 [Flags] 2 [Guid] 3952675529 [EditorId] 3952675529 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q8NOVRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [35096] Host "[IP] 172.17.112.1 [Port] 0 [Flags] 2 [Guid] 3952675529 [EditorId] 3952675529 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-Q8NOVRR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 49.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/Documents/GitHub/OnlyUp/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.15.1272
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019152 seconds.
+- Loaded All Assemblies, in  0.445 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 293 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.639 seconds
+Domain Reload Profiling: 1082ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (158ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (153ms)
+				TypeCache.ScanAssembly (139ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (578ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (422ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (100ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.018 seconds
+Refreshing native plugins compatible for Editor in 22.96 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.997 seconds
+Domain Reload Profiling: 1998ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (721ms)
+		LoadAssemblies (583ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (205ms)
+				TypeCache.ScanAssembly (181ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (998ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (827ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (98ms)
+			ProcessInitializeOnLoadAttributes (512ms)
+			ProcessInitializeOnLoadMethodAttributes (169ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 12.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4605 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (1.2 MB). Loaded Objects now: 5074.
+Memory consumption went from 197.4 MB to 196.2 MB.
+Total: 10.627700 ms (FindLiveObjects: 0.489200 ms CreateObjectMapping: 0.350800 ms MarkObjects: 8.511400 ms  DeleteObjects: 1.275300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 584741.663322 seconds.
+  path: Assets/Models/Realistic/VOUSE THE FINAL.fbx
+  artifactKey: Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/VOUSE THE FINAL.fbx using Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70c54a0699ab4a5661d3ca6d3374fa8') in 0.840233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 77
+========================================================================
+Received Import Request.
+  Time since last request: 15.079861 seconds.
+  path: Assets/Models/Realistic/Textures/New Folder
+  artifactKey: Guid(86891af2fe8aee148931aa592921b5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/New Folder using Guid(86891af2fe8aee148931aa592921b5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b4118d150125e5002958b6cf2a8747') in 0.001489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.410974 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse
+  artifactKey: Guid(86891af2fe8aee148931aa592921b5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse using Guid(86891af2fe8aee148931aa592921b5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587305ff368533701557b31c0ca4664d') in 0.000662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.017138 seconds.
+  path: Assets/Models/Realistic/Windmill.fbx
+  artifactKey: Guid(e66e3906b307ed342b125478060e7571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Windmill.fbx using Guid(e66e3906b307ed342b125478060e7571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8281a36fffa31de6ad02031ff161a231') in 1.669898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1492
+========================================================================
+Received Import Request.
+  Time since last request: 14.376205 seconds.
+  path: Assets/Models/Realistic/VOUSE THE FINAL.fbx
+  artifactKey: Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/VOUSE THE FINAL.fbx using Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7746c30e9a92a6f6c353fe37c77b72') in 0.252000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 77
+========================================================================
+Received Import Request.
+  Time since last request: 7.093643 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_ConcreteBare0356_9_seamless_S.png
+  artifactKey: Guid(3f88527ec43b97047b9683d72452ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_ConcreteBare0356_9_seamless_S.png using Guid(3f88527ec43b97047b9683d72452ccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2483959f8aa10dc27d86065e1247eb4b') in 0.042732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.405296 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Various_EnergyPole_512_albedo.tif
+  artifactKey: Guid(4ea19939ea9647042bacf233b6a60124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Various_EnergyPole_512_albedo.tif using Guid(4ea19939ea9647042bacf233b6a60124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90846c2f5fe38b27931b6a51a5367cad') in 0.023882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.431318 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Various_EnergyPole_512_normal.tif
+  artifactKey: Guid(aac36502259187e49a04f4bc442f74e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Various_EnergyPole_512_normal.tif using Guid(aac36502259187e49a04f4bc442f74e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c72b87b8b9462dd96ac7148333de4969') in 0.019512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.414322 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Various_EnergyPole_512_roughness.tif
+  artifactKey: Guid(c61472fa8e6296942874dcbbde4640c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Various_EnergyPole_512_roughness.tif using Guid(c61472fa8e6296942874dcbbde4640c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6476d280201a87156637f987fd1ba08e') in 0.022710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.352544 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Wood_BarkBirch3_0.9x1.8_512_albedo.tif
+  artifactKey: Guid(681b74c2f8496444a82c8fd0b7f89941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Wood_BarkBirch3_0.9x1.8_512_albedo.tif using Guid(681b74c2f8496444a82c8fd0b7f89941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223a3846a37d5960714134c413fd5a65') in 0.021556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.330682 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Wood_SidingOutdoor6_2x2_512_albedo.tif
+  artifactKey: Guid(258097d8ef3b032419850ca6fbfd14a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house/TexturesCom_Wood_SidingOutdoor6_2x2_512_albedo.tif using Guid(258097d8ef3b032419850ca6fbfd14a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d5e9418e22b661b014b82c6bfce637') in 0.021272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 35.108592 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/house
+  artifactKey: Guid(cc0f77b4f77dd6143ba46c7a925ef3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/house using Guid(cc0f77b4f77dd6143ba46c7a925ef3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5caedacc6c4230729f27a4262dfad80') in 0.000857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.516805 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/leafs
+  artifactKey: Guid(545e7a33156ba3c4fa9d35cf722dbe20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/leafs using Guid(545e7a33156ba3c4fa9d35cf722dbe20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4332f81f6c6eee1b57a555329c53286') in 0.000616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 26.146183 seconds.
+  path: Assets/Models/Realistic/VOUSE THE FINAL.fbx
+  artifactKey: Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/VOUSE THE FINAL.fbx using Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382e00827a48e84c1016e7121039906d') in 0.328361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 13.473574 seconds.
+  path: Assets/Models/Realistic/VOUSE THE FINAL.fbx
+  artifactKey: Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/VOUSE THE FINAL.fbx using Guid(f76a67e9011959f429601a1fd461de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62dec69443863bb15756ef895262bc6') in 0.296838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 83
+========================================================================
+Received Import Request.
+  Time since last request: 35.157823 seconds.
+  path: Assets/Models/Realistic/Textures/Gate/baked-gate_LOW_denoise.jpg
+  artifactKey: Guid(215b2b49cd35e5f4699867a58f71a309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Gate/baked-gate_LOW_denoise.jpg using Guid(215b2b49cd35e5f4699867a58f71a309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8cedcf15c29b9d6438d2918d3799f5') in 0.028481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Realistic/Textures/Gate/baked_island_E_denoise.jpg
+  artifactKey: Guid(7569306108cbf6447ac410146c797d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Gate/baked_island_E_denoise.jpg using Guid(7569306108cbf6447ac410146c797d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9009f4252d63e4f947ff6523bf8f6a4a') in 0.048190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark a1.jpg
+  artifactKey: Guid(79214c21e0af387489596f2c085576ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark a1.jpg using Guid(79214c21e0af387489596f2c085576ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3abc77071095d38e701ed4274c1737b') in 0.029683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark mask.jpg
+  artifactKey: Guid(7160b46ab21556341bf7c5c29c27c1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark mask.jpg using Guid(7160b46ab21556341bf7c5c29c27c1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baaf77cdd869018e0cc90a55376f9138') in 0.028863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 a1.jpg
+  artifactKey: Guid(5bf425d868b0a84499f37efc917069d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 a1.jpg using Guid(5bf425d868b0a84499f37efc917069d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4158b2ca13d17192f6075b1b2e0ed1e') in 0.031914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 bump.jpg
+  artifactKey: Guid(bb6c093c885aeb542aa708a0dba18431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 bump.jpg using Guid(bb6c093c885aeb542aa708a0dba18431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a5d79d32cd7191babf440cb10c67fc') in 0.033032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/bark_displace_2.jpg
+  artifactKey: Guid(f46697fc5b44448439731d76d5fea257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/bark_displace_2.jpg using Guid(f46697fc5b44448439731d76d5fea257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e8383938e4481523d246b05cf956fa') in 0.035322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark bump.jpg
+  artifactKey: Guid(feb617b994524f84f8542119e472c420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark bump.jpg using Guid(feb617b994524f84f8542119e472c420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c96e60d09b6e9a298f638de53397a3') in 0.035799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark a2.jpg
+  artifactKey: Guid(335c827f2964b9b4bb4bab0f32e2fd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark a2.jpg using Guid(335c827f2964b9b4bb4bab0f32e2fd9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43ca99ec0126899c633ef09b88d38cf') in 0.031056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Models/Realistic/Textures/Windmill/Bridge.mat
+  artifactKey: Guid(382c061913f3b4d41a7b646a4d32c19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Windmill/Bridge.mat using Guid(382c061913f3b4d41a7b646a4d32c19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4e62350425be6353d7e638283fcf1d') in 0.059586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/TexturesCom_Wood_SidingOutdoor6_2x2_512_albedo.tif
+  artifactKey: Guid(3808e247124daee42b2d3d4c0c1dc3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/TexturesCom_Wood_SidingOutdoor6_2x2_512_albedo.tif using Guid(3808e247124daee42b2d3d4c0c1dc3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2007417c8a8b641950719098e6a07b8') in 0.027227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/TexturesCom_Various_EnergyPole_512_albedo.tif
+  artifactKey: Guid(2d17b6af9a5f6904eb45e1444b684e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/TexturesCom_Various_EnergyPole_512_albedo.tif using Guid(2d17b6af9a5f6904eb45e1444b684e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734c8df2238f414be1c68af3625da1fb') in 0.027634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Models/Realistic/Textures/Villa/T_Window_Re_Col_Norm.jpeg
+  artifactKey: Guid(adc2cf855878a5b4c88b587b69c3932e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Villa/T_Window_Re_Col_Norm.jpeg using Guid(adc2cf855878a5b4c88b587b69c3932e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556e816d5eccd0c9e24e7b9d2aa5526f') in 0.029341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark normals.jpg
+  artifactKey: Guid(27aa122836ef3ae45bc3d9932e3cebda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark normals.jpg using Guid(27aa122836ef3ae45bc3d9932e3cebda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb224e151043cbc311ea3c93c198617') in 0.027318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Realistic/Textures/Forest/DONT_WATCH_THIS.mat
+  artifactKey: Guid(8e0d7d90c01f7ab4486df1fece42ef95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Forest/DONT_WATCH_THIS.mat using Guid(8e0d7d90c01f7ab4486df1fece42ef95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c999203329f1924f67be8046db851d5b') in 0.033911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Models/Realistic/Textures/Villa/T_Window_Re_Col.jpeg
+  artifactKey: Guid(dc3d986827211ae4da42c5226003fc88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Villa/T_Window_Re_Col.jpeg using Guid(dc3d986827211ae4da42c5226003fc88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42bf1cf09aba2ba52b1515072fa08fdc') in 0.029597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/bark_displace_1.jpg
+  artifactKey: Guid(a81b47d1a4be00a47a6f4285f2cde7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/bark_displace_1.jpg using Guid(a81b47d1a4be00a47a6f4285f2cde7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4aa8543f08f1fcf825a207725c47c62') in 0.031041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 21.330348 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos stem.jpg
+  artifactKey: Guid(167b34a7ba8fc5743a9a68fa4b33aced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos stem.jpg using Guid(167b34a7ba8fc5743a9a68fa4b33aced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d51a4656c0d15ad7a57c096f10cc63') in 0.022281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.287966 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/human_silhouette.png
+  artifactKey: Guid(5273936846d20ca4295c2a8b759eaa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/human_silhouette.png using Guid(5273936846d20ca4295c2a8b759eaa4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d8f13c0035a0683139ab7c303179b8f') in 0.020925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.620613 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 reflect.jpg
+  artifactKey: Guid(e36da6fbd5d030942a4cf8597a34bced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 reflect.jpg using Guid(e36da6fbd5d030942a4cf8597a34bced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3785d2d7626e3ef5378ae7daf8ad3bb5') in 0.021061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.924931 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos beans color.jpg
+  artifactKey: Guid(94e5c8d065bc2594cb3e27233f7816f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos beans color.jpg using Guid(94e5c8d065bc2594cb3e27233f7816f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e60a51e6cb9f460af865a830f299b2') in 0.019182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.377898 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos beans normals.jpg
+  artifactKey: Guid(0dcb28f2c4df9d345b06761a8508c30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos beans normals.jpg using Guid(0dcb28f2c4df9d345b06761a8508c30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84c179a889845f9373ddaa048660396') in 0.019022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.577588 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos flowers color.jpg
+  artifactKey: Guid(1aeaaf5e895c9044c82c42080e1eecf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos flowers color.jpg using Guid(1aeaaf5e895c9044c82c42080e1eecf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe38da47b13ca6d412041176069ace5') in 0.020368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.961146 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 normals.jpg
+  artifactKey: Guid(1e941406635fd4f4faa91b194000cb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos bark2 normals.jpg using Guid(1e941406635fd4f4faa91b194000cb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e4f30da1416b34415ca7b6fbd4aa69d') in 0.027071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos leaf color a2.jpg
+  artifactKey: Guid(0241ef682ce536d4b89231302464f983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos leaf color a2.jpg using Guid(0241ef682ce536d4b89231302464f983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e44001766d93a5d026b9acad2083209f') in 0.023232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos flowers mask.jpg
+  artifactKey: Guid(56b15d01e4f39ad4fa713ce95b43bd6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos flowers mask.jpg using Guid(56b15d01e4f39ad4fa713ce95b43bd6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5372ca86a6f2068816726cd783eac197') in 0.024761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos leaf color a1.jpg
+  artifactKey: Guid(e28bc37f28f4fea49a6e9e2a2e8fbadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos leaf color a1.jpg using Guid(e28bc37f28f4fea49a6e9e2a2e8fbadd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f235fbaabb407738f335126e37f63c') in 0.025735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos leaf bump.jpg
+  artifactKey: Guid(0578ca953355cb047955153faf0cde83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/gleditsia triacanthos leaf bump.jpg using Guid(0578ca953355cb047955153faf0cde83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c32f26c683a8c9840f1df8b950c118d') in 0.022909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.681307 seconds.
+  path: Assets/PBR_RPG_FPS_Game_Assets_industrial/Models/Containers/Container_v1/Source/Container_v1.FBX
+  artifactKey: Guid(a4cabfc647d3e0641a915c6ca627a680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PBR_RPG_FPS_Game_Assets_industrial/Models/Containers/Container_v1/Source/Container_v1.FBX using Guid(a4cabfc647d3e0641a915c6ca627a680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58187fcca78a1effc8328dda1d61660a') in 0.059443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Blue.fbx
+  artifactKey: Guid(7d44636b14c41fe46ba722a341363b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Blue.fbx using Guid(7d44636b14c41fe46ba722a341363b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468ac652a7ceca2d19df3d70620abbd0') in 0.073824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Yellow.fbx
+  artifactKey: Guid(79582492fe6999e4e8dedc40e8129bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Yellow.fbx using Guid(79582492fe6999e4e8dedc40e8129bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bf9621c048177931fc5ccb28152ff8') in 0.066317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Red.fbx
+  artifactKey: Guid(bafaf00bfe24a6f498617fa3ab7f9434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Red.fbx using Guid(bafaf00bfe24a6f498617fa3ab7f9434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e9180f2300e6d10d4d13cb612c14f0') in 0.066115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Brown.fbx
+  artifactKey: Guid(7d3d9b66174f11b4cbb0b9845d111cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Megapoly.Art/Containers/Meshes/Container_20FT_Brown.fbx using Guid(7d3d9b66174f11b4cbb0b9845d111cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb3bfa6de16ebeb1de8876d8837aec4') in 0.064654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 65.237837 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/TexturesCom_Various_EnergyPole_512_normal.tif
+  artifactKey: Guid(6856a03a13ff9c946bedf0d194fb6382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/TexturesCom_Various_EnergyPole_512_normal.tif using Guid(6856a03a13ff9c946bedf0d194fb6382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9487154acf30dc30dfa82a21e3d8a97') in 0.032199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.372322 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/Material.018.mat
+  artifactKey: Guid(e7493ab628ec35b42b39c7ac433ed81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/Material.018.mat using Guid(e7493ab628ec35b42b39c7ac433ed81d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a271a8ed6f08efbbd7c8ff8f3381fc1e') in 0.022993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 21.635259 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_00.jpg
+  artifactKey: Guid(243bff26504fe7244a68cb1628bcdba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_00.jpg using Guid(243bff26504fe7244a68cb1628bcdba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac861d01eb14d9b75645ac2ecaf83cb0') in 0.044198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_45.jpg
+  artifactKey: Guid(4d55d02366e57b444a6a6f99dbcb31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_45.jpg using Guid(4d55d02366e57b444a6a6f99dbcb31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c346ea44881c130c968902acf8add765') in 0.029880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_55.jpg
+  artifactKey: Guid(16e06630b917fc54ba6dbb8cfa88cc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_55.jpg using Guid(16e06630b917fc54ba6dbb8cfa88cc7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc44ec3faaedddff48f1461cc76805cc') in 0.029949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_15.jpg
+  artifactKey: Guid(53c67f7dd64633c43bc1afbe6f39245e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_15.jpg using Guid(53c67f7dd64633c43bc1afbe6f39245e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3289aff7f3c79f4c24e1029f1f51aae') in 0.029674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_75.jpg
+  artifactKey: Guid(975b83a5dfd424e4cb072d3b02c92212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_75.jpg using Guid(975b83a5dfd424e4cb072d3b02c92212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5883f5c42d8a1fa207893a7300c903d6') in 0.025931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_85.jpg
+  artifactKey: Guid(1b51f24368ea9d44592134b70abb5f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_85.jpg using Guid(1b51f24368ea9d44592134b70abb5f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd49fafbf86f5164972691fc6c57b54') in 0.024274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_60.jpg
+  artifactKey: Guid(fab9024f8a03c4243a6f01737245d617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_60.jpg using Guid(fab9024f8a03c4243a6f01737245d617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99dc909f2dba9cc7b3c40bbde7e0b44') in 0.028698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000571 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_70.jpg
+  artifactKey: Guid(fce9080475bc7de4892fa93f387a3d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_70.jpg using Guid(fce9080475bc7de4892fa93f387a3d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b627159090fb0a3ba0238575395ca426') in 0.031201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_10.jpg
+  artifactKey: Guid(0c507d27bd342974b86e51961cf5757e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_10.jpg using Guid(0c507d27bd342974b86e51961cf5757e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee3a9f648f37cd663e68fc5d7c44cbd') in 0.027692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_80.jpg
+  artifactKey: Guid(1c6f34009170d114aafd6bbb88d59805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_80.jpg using Guid(1c6f34009170d114aafd6bbb88d59805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24cb0ba21087a71bad2a1204163edc8c') in 0.024004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Models/Realistic/Textures/Vouse/white_65.jpg
+  artifactKey: Guid(f3953bbab775f6949bc209b27ff81a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Vouse/white_65.jpg using Guid(f3953bbab775f6949bc209b27ff81a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2b6c07b5f7dbec63819e53762a6ee9') in 0.025021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3261.410144 seconds.
+  path: Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_2K_Normal_LOD0.jpg
+  artifactKey: Guid(d8178b2415a155541bbab3ad64a10388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/Camping/swamp6/Aset_wood_stump_M_qdyf7_2K_Normal_LOD0.jpg using Guid(d8178b2415a155541bbab3ad64a10388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9ab9c10bf847af159bd44b288b534b') in 0.436320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.464002 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_BaseColor.png
+  artifactKey: Guid(24eac9cbcc33a9b4688fa1878dad45bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_BaseColor.png using Guid(24eac9cbcc33a9b4688fa1878dad45bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32755131e6e8ccae407b8d67e94f52ce') in 0.050575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_Metallic.png
+  artifactKey: Guid(1b9bdf1235b97dd40b433bcc37db6211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Factory/Textures/TowerCrane/Tower_crane_IRON_Metallic.png using Guid(1b9bdf1235b97dd40b433bcc37db6211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da5360ad4d3c9cf7b407bde2d38fca4') in 0.072464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.952952 seconds.
+  path: Assets/Container/container_D.tga
+  artifactKey: Guid(a906259e8f9f075498aca37ffb0790fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Container/container_D.tga using Guid(a906259e8f9f075498aca37ffb0790fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b232ea71c48f6837d2c72ec9ad9011') in 0.032548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Container/container_S.tga
+  artifactKey: Guid(09ddcef1a2c209542b4e923ab6848428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Container/container_S.tga using Guid(09ddcef1a2c209542b4e923ab6848428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '449307577daa7baabdf58f88fde92570') in 0.038547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PBR_RPG_FPS_Game_Assets_industrial/Models/Containers/Container_v1/Source/Container_v1_AO.png
+  artifactKey: Guid(99b9621dcfbd46a44b76c52c99f21c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PBR_RPG_FPS_Game_Assets_industrial/Models/Containers/Container_v1/Source/Container_v1_AO.png using Guid(99b9621dcfbd46a44b76c52c99f21c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8193a28422f9720d24db706a3c3d304c') in 0.032785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8335.637234 seconds.
+  path: Assets/Models/Trains/Textures/body/mga.tga
+  artifactKey: Guid(16b84c473703fac40857abe2752d2109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trains/Textures/body/mga.tga using Guid(16b84c473703fac40857abe2752d2109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86e8aaf369045cfd98745c7aff9bbc6') in 0.382807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part2_roughness.jpg
+  artifactKey: Guid(013eeace52af83d40a1cfdc05757aa46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part2_roughness.jpg using Guid(013eeace52af83d40a1cfdc05757aa46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78fd5755064e45a4e80e037f09f01ed') in 0.050215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part1_AO.jpg
+  artifactKey: Guid(0cd15a7efe0af7a4dbfd81d62fbe55df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part1_AO.jpg using Guid(0cd15a7efe0af7a4dbfd81d62fbe55df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0b86de89691715694b42bd68b204da') in 0.042586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Models/Realistic/Textures/MH/MH_part1_roughness.jpg
+  artifactKey: Guid(9f0e1bf18fb2e6a48b805342e27ad40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Realistic/Textures/MH/MH_part1_roughness.jpg using Guid(9f0e1bf18fb2e6a48b805342e27ad40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2f578434a0e3fa19764277b830ea49') in 0.044100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

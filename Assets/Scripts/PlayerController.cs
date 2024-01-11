@@ -313,13 +313,13 @@ public class PlayerController : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, Vector3.down, out var hit, 1))
         {
-            if (hit.collider.gameObject.tag == "Bed")
+            if ( hit.collider.gameObject.tag == "PushObject")
             {
-                ySpeed = 10;
+                ySpeed = 11;
                 isJumping = true;
                 SoundManager.PlaySound(SoundManager.Sound.BedBounce);
             }
-
+           
         }
     }
     void SlowMotion()
